@@ -99,6 +99,9 @@
       <SubType>Content</SubType>
       <DependentUpon>网络安全模块设计图.componentdiagram</DependentUpon>
     </Content>
+    <Content Include="网络安全模块配置项目.dgml">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\HZ.ModelingProject.uml">
       <SubType>Content</SubType>

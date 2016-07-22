@@ -44,6 +44,10 @@ out：自动增加token
       <elementDefinition Id="c8c1f969-2804-4d5f-b6e8-724bdcc65767" />
       <body>IIS Module</body>
     </comment>
+    <comment Id="5d02f1fa-523b-4d60-aebf-c26295de25d9">
+      <elementDefinition Id="c907e31f-6832-495c-9289-3c51ed8cac31" />
+      <body>记录日志必须是异步的</body>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances Id="8d19d896-b874-453e-89ff-01b8464c6e79">
@@ -104,14 +108,14 @@ out：自动增加token
           <providedInterface Id="a92fbcb2-6d23-4d0c-8b93-eaadb97769e2" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
             <elementDefinition Id="eb562c5a-99c1-439b-aa06-614d3902ad1e" />
             <type_NamedElement>
-              <interfaceMoniker Id="3f8bbe67-7ee9-4dc4-ae4f-d086ac208f98" LastKnownName="WebContext" />
+              <interfaceMoniker Id="3f8bbe67-7ee9-4dc4-ae4f-d086ac208f98" LastKnownName="HttpApplication" />
             </type_NamedElement>
           </providedInterface>
         </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
     <modelContainsNamedElements>
-      <Interface Id="3f8bbe67-7ee9-4dc4-ae4f-d086ac208f98" name="WebContext" isAbstract="false" isLeaf="false">
+      <Interface Id="3f8bbe67-7ee9-4dc4-ae4f-d086ac208f98" name="HttpApplication" isAbstract="false" isLeaf="false">
         <elementDefinition Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da" />
       </Interface>
     </modelContainsNamedElements>
@@ -122,14 +126,14 @@ out：自动增加token
           <providedInterface Id="8e960e65-fbb4-411a-954e-e64b2d48ca24" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
             <elementDefinition Id="4388e241-ba96-42a3-9842-9f4f5c1de5af" />
             <type_NamedElement>
-              <interfaceMoniker Id="ec523108-abc6-40dc-bcfe-b92fc0e04d31" LastKnownName="WebContext" />
+              <interfaceMoniker Id="ec523108-abc6-40dc-bcfe-b92fc0e04d31" LastKnownName="HttpApplication" />
             </type_NamedElement>
           </providedInterface>
         </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
     <modelContainsNamedElements>
-      <Interface Id="ec523108-abc6-40dc-bcfe-b92fc0e04d31" name="WebContext" isAbstract="false" isLeaf="false">
+      <Interface Id="ec523108-abc6-40dc-bcfe-b92fc0e04d31" name="HttpApplication" isAbstract="false" isLeaf="false">
         <elementDefinition Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da" />
       </Interface>
     </modelContainsNamedElements>
@@ -140,14 +144,14 @@ out：自动增加token
           <providedInterface Id="d7f9957f-b5a8-45a5-b3e9-f7feb05c3b20" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
             <elementDefinition Id="896ce825-1180-4b01-ad7c-f2b7158c5237" />
             <type_NamedElement>
-              <interfaceMoniker Id="db93f606-fdd5-4dd3-8cd4-f95d65641851" LastKnownName="WebContext" />
+              <interfaceMoniker Id="db93f606-fdd5-4dd3-8cd4-f95d65641851" LastKnownName="HttpApplication" />
             </type_NamedElement>
           </providedInterface>
         </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
     <modelContainsNamedElements>
-      <Interface Id="db93f606-fdd5-4dd3-8cd4-f95d65641851" name="WebContext" isAbstract="false" isLeaf="false">
+      <Interface Id="db93f606-fdd5-4dd3-8cd4-f95d65641851" name="HttpApplication" isAbstract="false" isLeaf="false">
         <elementDefinition Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da" />
       </Interface>
     </modelContainsNamedElements>
@@ -158,14 +162,14 @@ out：自动增加token
           <providedInterface Id="3aa07f8d-95c5-4191-9171-2feefaea301a" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
             <elementDefinition Id="8163037c-2543-4dd1-82fc-9c7dfc86d97f" />
             <type_NamedElement>
-              <interfaceMoniker Id="d4b20a33-de0f-4f0d-8dc4-8279c3ec4b5a" LastKnownName="WebContext" />
+              <interfaceMoniker Id="d4b20a33-de0f-4f0d-8dc4-8279c3ec4b5a" LastKnownName="HttpApplication" />
             </type_NamedElement>
           </providedInterface>
         </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
     <modelContainsNamedElements>
-      <Interface Id="d4b20a33-de0f-4f0d-8dc4-8279c3ec4b5a" name="WebContext" isAbstract="false" isLeaf="false">
+      <Interface Id="d4b20a33-de0f-4f0d-8dc4-8279c3ec4b5a" name="HttpApplication" isAbstract="false" isLeaf="false">
         <elementDefinition Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da" />
       </Interface>
     </modelContainsNamedElements>
@@ -176,19 +180,20 @@ out：自动增加token
           <providedInterface Id="c56904bb-3507-40fc-8aef-2f83ae360a68" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
             <elementDefinition Id="9d32bfd2-7310-4a85-bfcb-3025bc019162" />
             <type_NamedElement>
-              <interfaceMoniker Id="7364882d-627d-463d-aaa9-02602df9a432" LastKnownName="WebContext" />
+              <interfaceMoniker Id="7364882d-627d-463d-aaa9-02602df9a432" LastKnownName="HttpApplication" />
             </type_NamedElement>
           </providedInterface>
         </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
     <modelContainsNamedElements>
-      <Interface Id="7364882d-627d-463d-aaa9-02602df9a432" name="WebContext" isAbstract="false" isLeaf="false">
+      <Interface Id="7364882d-627d-463d-aaa9-02602df9a432" name="HttpApplication" isAbstract="false" isLeaf="false">
         <elementDefinition Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da" />
       </Interface>
     </modelContainsNamedElements>
     <componentModelHasComponents>
-      <component Id="6893a35e-d15d-462f-8156-c2a180adc632" name="token管理器" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <component Id="6893a35e-d15d-462f-8156-c2a180adc632" name="token管理器" isAbstract="false" isLeaf="false" isActiveClass="false" isIndirectlyInstantiated="false">
+        <description>必须是</description>
         <elementDefinition Id="72ed0f0d-9912-430a-a613-b0fb351d3ae4" />
       </component>
     </componentModelHasComponents>

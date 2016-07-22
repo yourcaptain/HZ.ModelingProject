@@ -79,6 +79,10 @@ out：自动增加token
       Id="c8c1f969-2804-4d5f-b6e8-724bdcc65767">
       <body>IIS Module</body>
     </comment>
+    <comment
+      Id="c907e31f-6832-495c-9289-3c51ed8cac31">
+      <body>记录日志必须是异步的</body>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
@@ -2166,7 +2170,7 @@ out：自动增加token
             <type_NamedElement>
               <interfaceMoniker
                 Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da"
-                LastKnownName="WebContext"
+                LastKnownName="HttpApplication"
                 LastKnownLocation="HZ.ModelingProject.uml" />
             </type_NamedElement>
           </providedInterface>
@@ -2176,7 +2180,7 @@ out：自动增加token
     <packageHasNamedElement>
       <Interface
         Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da"
-        name="WebContext"
+        name="HttpApplication"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
@@ -2203,7 +2207,7 @@ out：自动增加token
             <type_NamedElement>
               <interfaceMoniker
                 Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da"
-                LastKnownName="WebContext"
+                LastKnownName="HttpApplication"
                 LastKnownLocation="HZ.ModelingProject.uml" />
             </type_NamedElement>
           </providedInterface>
@@ -2233,7 +2237,7 @@ out：自动增加token
             <type_NamedElement>
               <interfaceMoniker
                 Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da"
-                LastKnownName="WebContext"
+                LastKnownName="HttpApplication"
                 LastKnownLocation="HZ.ModelingProject.uml" />
             </type_NamedElement>
           </providedInterface>
@@ -2263,7 +2267,7 @@ out：自动增加token
             <type_NamedElement>
               <interfaceMoniker
                 Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da"
-                LastKnownName="WebContext"
+                LastKnownName="HttpApplication"
                 LastKnownLocation="HZ.ModelingProject.uml" />
             </type_NamedElement>
           </providedInterface>
@@ -2293,7 +2297,7 @@ out：自动增加token
             <type_NamedElement>
               <interfaceMoniker
                 Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da"
-                LastKnownName="WebContext"
+                LastKnownName="HttpApplication"
                 LastKnownLocation="HZ.ModelingProject.uml" />
             </type_NamedElement>
           </providedInterface>
@@ -2306,7 +2310,10 @@ out：自动增加token
         name="token管理器"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false"
+        isIndirectlyInstantiated="false">
+        <description>必须是</description>
+      </component>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <component

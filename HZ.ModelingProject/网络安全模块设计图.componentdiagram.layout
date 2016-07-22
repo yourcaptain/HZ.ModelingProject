@@ -149,7 +149,7 @@
       <commentMoniker Id="e24ac647-8202-4fa6-bdf2-7c8f28cad644" />
       <relativeChildShapes />
     </commentShape>
-    <componentShape Id="1ea4c03a-9a69-4ee6-8bc6-938c1626ecff" absoluteBounds="9.25, 1.125, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+    <componentShape Id="1ea4c03a-9a69-4ee6-8bc6-938c1626ecff" absoluteBounds="9.25, 1.125, 1.5, 0.95" customColor="Yellow" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
       <componentMoniker Id="6893a35e-d15d-462f-8156-c2a180adc632" LastKnownName="token管理器" />
     </componentShape>
     <dependencyConnector edgePoints="[(7.67708333333333 : 2.62083333333333); (8.05208333333333 : 2.62083333333333); (8.05208333333333 : 1.87083333333333); (9.25 : 1.87083333333333)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
@@ -171,5 +171,9 @@
         <componentShapeMoniker Id="96d9f8d6-3c1f-40cc-b5ac-c6e56d64517d" />
       </nodes>
     </dependencyConnector>
+    <commentShape Id="d5442d8d-89ca-4aa3-b33c-3b8799deba17" absoluteBounds="0.5, 5.25, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="5d02f1fa-523b-4d60-aebf-c26295de25d9" />
+      <relativeChildShapes />
+    </commentShape>
   </nestedChildShapes>
 </componentDiagram>

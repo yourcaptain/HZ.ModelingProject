@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="TopToBottom" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Address" Bounds="-86,239.138875681559,64.4866666666667,25.8366666666667" Label="address" UseManualLocation="True" />
+    <Node Id="Description" Bounds="258.861130269368,251.34667368571,84.1833333333333,25.8366666666667" Label="description" UseManualLocation="True" />
+    <Node Id="HZ.WAF" Bounds="166.681670633952,53.3835543539768,60.3166666666667,25.8366666666666" Label="hzWAF" />
+    <Node Id="HzWAF建议部署在应用服务器（集群）的最前端。" Category="Comment" Bounds="198,-121.636645646023,248,73.3466666666667" Label="hzWAF I 型建议部署在每一台基于IIS的Windows应用服务器中。（如果作为单独的服务器部署在应用服务器或应用服务器集群最前面，则还需承担起负载均衡功能）" UseManualLocation="True" />
+    <Node Id="InUse" Bounds="475.967957204183,105.673341471354,51.91,25.8366666666667" Label="inUse" UseManualLocation="True" />
+    <Node Id="Layer" Bounds="183.327782864041,173.009955391439,50,25.8366666666667" Label="layer" UseManualLocation="True" />
+    <Node Id="Layers" Bounds="177.209163682726,114.673188883464,53.1233333333333,25.8366666666666" Label="layers" UseManualLocation="True" />
+    <Node Id="Module" Bounds="383.507812296549,251.855648502604,63.9466666666667,25.8366666666667" Label="module" UseManualLocation="True" />
+    <Node Id="Name" Bounds="-170.079999998592,238.138875681559,52.08,25.8366666666666" Label="name" UseManualLocation="True" />
+    <Node Id="Name1" Bounds="155,245.846722058105,52.08,25.8366666666666" Label="name" UseManualLocation="True" />
+    <Node Id="TimerOn" Bounds="351.295836385091,127.682120308431,67.4733333333333,25.8366666666667" Label="timerOn" UseManualLocation="True" />
+    <Node Id="TokenManager" Bounds="-131.35,98.873394177653,109.843333333333,25.8366666666667" Label="tokenManagers" UseManualLocation="True" />
+    <Node Id="TokenManager1" Bounds="-181.790836317274,172.710160929362,104.29,25.8366666666667" Label="tokenManager" UseManualLocation="True" />
+    <Node Id="UseFlag" Bounds="52.8783333333333,242.346666666666,51.91,25.8366666666667" Label="inUse" UseManualLocation="True" />
+    <Node Id="关注点：" Category="Comment" Bounds="-140,-126.068931081348,248.723333333333,73.3466666666667" Label="性能受影响时的处理步骤：1、新增处理服务器 2、不允许新增服务器时，尝试停止耗时最多的层 3、尝试关闭所有层  4、卸载整个IIS模块" UseManualLocation="True" />
+    <Node Id="华招WEB应用防火墙" Category="Comment" Bounds="134.831666666667,-2.4532123126899,149.413333333333,25.8366666666667" Label="华招WEB应用防火墙 I型" />
+    <Node Id="是否启用" Category="Comment" Bounds="562.211290537516,105.510102945964,140,25.8366666666667" Label="是否启用，控制所有层" UseManualLocation="True" />
+    <Node Id="是否启用，控制单一层" Category="Comment" Bounds="0,167.51,140,25.8366666666666" />
+    <Node Id="是否开启计时器（记录每次过滤所花时间）" Category="Comment" Bounds="430,183.518886975098,248,25.8366666666667" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="HZ.WAF" Target="InUse" Bounds="226.998337300618,71.4708845554844,240.098970477688,41.1518372959732" />
+    <Link Source="HZ.WAF" Target="Layers" Bounds="198.300851263364,79.2202210206434,2.99783358922829,26.5099669811165" />
+    <Link Source="HZ.WAF" Target="TimerOn" Bounds="226.426151942777,77.9825252121277,118.228476512419,46.676707640243" />
+    <Link Source="HZ.WAF" Target="TokenManager" Bounds="-12.6288323834266,71.322219593429,179.310503017378,29.8490712152655" />
+    <Link Source="Layer" Target="Description" Bounds="223.60236715658,198.846622058106,55.2039682040324,46.6882272488929" />
+    <Link Source="Layer" Target="Module" Bounds="233.327782864041,195.443665648714,142.506488437521,54.2401180636173" />
+    <Link Source="Layer" Target="Name1" Bounds="189.037235608514,198.846622058106,14.4507844393309,38.5721485546144" />
+    <Link Source="Layer" Target="UseFlag" Bounds="110.630999699847,198.478736584919,74.257348164711,39.7604710350128" />
+    <Link Source="Layers" Target="Layer" Bounds="204.779940642819,140.50985555013,1.83783577370866,23.5274333156216" />
+    <Link Source="TokenManager" Target="TokenManager1" Bounds="-115.072682516785,124.71006084432,29.3335210830553,40.6988722276105" />
+    <Link Source="TokenManager1" Target="Address" Bounds="-114.88773669735,198.546827596029,39.6009164347818,34.6642082642771" />
+    <Link Source="TokenManager1" Target="Name" Bounds="-139.264261510408,198.546827596029,6.77642216437215,30.8022473730071" />
+    <Link Source="华招WEB应用防火墙" Target="HZ.WAF" Bounds="201.773684283739,23.3834543539768,4.82677744061746,21.2241813812365" />
+    <Link Source="是否启用" Target="InUse" Bounds="536.877950140256,118.516139416866,25.3333535706813,0.0317402084756964" />
+    <Link Source="是否启用，控制单一层" Target="UseFlag" Bounds="71.5248135292458,193.346678059896,4.72871638818178,40.0620360258355" />
+    <Link Source="是否开启计时器（记录每次过滤所花时间）" Target="TimerOn" Bounds="427.083842019694,154.496682538098,87.8240260103071,29.0222094703656" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

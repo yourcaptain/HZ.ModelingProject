@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="101010.日志服务兼容现有系统">
+  <componentModelMoniker Id="67562e23-da17-4d58-b525-ecbe8b085707" />
+  <nestedChildShapes>
+    <componentShape Id="b651dcca-f385-474e-ac85-dc7c2519d917" absoluteBounds="6.875, 1.875, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="2ed0399a-d67b-40a9-8ce9-a3275a9893e8" LastKnownName="日志服务" />
+    </componentShape>
+    <componentShape Id="6ab3aed0-ddba-4868-a205-0409f81c5bfc" absoluteBounds="0.875, 1.125, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="e4c21cd6-6863-4c09-840d-b21331b07a9b" LastKnownName="EMED 4.0" />
+    </componentShape>
+    <componentShape Id="fbc47c5f-1934-44d7-bbab-54fd443ae71d" absoluteBounds="0.875, 3, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="3072a8f9-f5c8-4bca-aaf8-59fc0e0db330" LastKnownName="Android App" />
+    </componentShape>
+    <componentShape Id="3923803f-a45c-4a15-b22b-9fe62916517f" absoluteBounds="4.75, 1.875, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="261626ae-7c3a-4ece-a4ef-44ccc45468ac" LastKnownName="日志采集器" />
+    </componentShape>
+    <dependencyConnector edgePoints="[(2.375 : 1.6); (2.75 : 1.6); (2.75 : 2.12411764705882); (4.75 : 2.12411764705882)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="34502790-9673-41f4-b535-5e4f11cb11c3" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="6ab3aed0-ddba-4868-a205-0409f81c5bfc" />
+        <componentShapeMoniker Id="3923803f-a45c-4a15-b22b-9fe62916517f" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(2.375 : 3.1625); (2.75 : 3.1625); (2.75 : 2.6625); (4.75 : 2.6625)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="d1546c40-497a-499b-b205-3d25dc50bbce" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="fbc47c5f-1934-44d7-bbab-54fd443ae71d" />
+        <componentShapeMoniker Id="3923803f-a45c-4a15-b22b-9fe62916517f" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(6.25 : 2.35); (6.875 : 2.35)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="7568a7c3-7af2-43f4-a9df-7c8e55399387" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="3923803f-a45c-4a15-b22b-9fe62916517f" />
+        <componentShapeMoniker Id="b651dcca-f385-474e-ac85-dc7c2519d917" />
+      </nodes>
+    </dependencyConnector>
+    <componentShape Id="1e5945a8-a9e0-40dc-a802-3441dbeed997" absoluteBounds="0.875, 4.625, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="416bb92d-17a5-4086-b3e8-9286c1c7b474" LastKnownName="省平台" />
+    </componentShape>
+  </nestedChildShapes>
+</componentDiagram>

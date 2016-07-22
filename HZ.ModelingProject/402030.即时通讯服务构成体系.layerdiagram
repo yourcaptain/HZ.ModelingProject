@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="bfe36281-d9e8-4456-bbdb-b41221b912b6" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="dae7cfd0-7901-4877-ab2e-c13eda400795" name="Comment1" />
+  </comments>
+  <layers>
+    <layer Id="2a53d554-804f-4d26-a9dd-ad88c54253ce" name="即时通讯服务API" />
+    <layer Id="424fb54a-0096-45d7-a851-59005de55dec" name="即时通讯服务管理界面" />
+    <layer Id="af27f4b2-24ec-4a71-aa58-90c0d898cdc5" name="1040.通用认证服务" />
+    <layer Id="4b03a662-8350-4bdd-83c6-cb3dc9ef742b" name="1030.数据访问控制" />
+    <layer Id="695e61f4-b26a-42df-a0e5-7b022018dabb" name="第三方短信通道" />
+    <layer Id="e56d9205-3f13-46b5-93fc-b622e584a131" name="邮件发送" />
+    <layer Id="7e4018ff-bb33-4581-bdbc-9f3feaa51a63" name="消息数据库" />
+    <layer Id="2f6d51af-6951-4bb7-bea7-3b5dcc78330c" name="缓存和排队系统" />
+    <layer Id="386a1822-c90d-4397-a474-8716f559459b" name="消息发送控制" />
+  </layers>
+</layerModel>

@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="9f35b528-78c4-41e7-87a0-6ccf4e0d330f" name="网络安全模块设计图" linkedPackageId="0fecd376-d736-4786-b352-58eefc5b2cbc" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <ownedCommentsInternal>
+    <comment Id="3826c63a-24c1-41e0-81e6-a4e02c855755">
+      <elementDefinition Id="ad9a8c66-ce8c-4759-a35f-7c1b6034a832" />
+      <body>in：检查token有效性，Referer check
+out：自动增加token
+
+需要域名白名单
+需要token管理</body>
+      <annotatedElements>
+        <componentMoniker Id="a6f7eca1-9bb7-4e37-baa8-4cf703c9afa7" LastKnownName="CSRF跨站请求防御模块" />
+      </annotatedElements>
+    </comment>
+    <comment Id="4e4906ec-7123-4317-a092-68abfa604231">
+      <elementDefinition Id="70c5b117-9920-4624-be14-4b2371adc76f" />
+      <body>in：HTTP请求体中HTML内容解析替换</body>
+      <annotatedElements>
+        <componentMoniker Id="2e2f5af2-d573-406a-a0be-4ec7b77333bf" LastKnownName="HTML注入防御模块" />
+      </annotatedElements>
+    </comment>
+    <comment Id="4e1e861f-4fb7-440e-a95a-333e04184060">
+      <elementDefinition Id="bcf78416-44e5-4b5d-b3c2-de7f3008536c" />
+      <body>in：HTTP请求体中javascript内容解析替换</body>
+      <annotatedElements>
+        <componentMoniker Id="695b53bf-27b5-4654-95c0-5d57ffa99c46" LastKnownName="Javascript注入防御" />
+      </annotatedElements>
+    </comment>
+    <comment Id="1634086d-ef3c-4b07-8872-09e6b0214524">
+      <elementDefinition Id="7c36441c-3d03-4b10-a57b-f2504c05d104" />
+      <body>in：HTTP请求体中sql内容解析替换</body>
+      <annotatedElements>
+        <componentMoniker Id="d010bbb4-c71e-41eb-a0b7-1076f67d501a" LastKnownName="SQL注入攻击防御" />
+      </annotatedElements>
+    </comment>
+    <comment Id="d157a8ea-07ab-4309-82bf-f8de5a7fbb47">
+      <elementDefinition Id="cbb22bc6-8b34-4cf4-a9ba-e0b281b6144a" />
+      <body>out：自动设置Cookie设置为 HTTP Only</body>
+      <annotatedElements>
+        <componentMoniker Id="a39aca5b-e4c7-4c8a-a177-c5da64a33797" LastKnownName="XSS防御" />
+      </annotatedElements>
+    </comment>
+    <comment Id="e24ac647-8202-4fa6-bdf2-7c8f28cad644">
+      <elementDefinition Id="c8c1f969-2804-4d5f-b6e8-724bdcc65767" />
+      <body>IIS Module</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="8d19d896-b874-453e-89ff-01b8464c6e79">
+      <profileInstance Id="6f56c9a2-c710-4475-ac8e-076f16c65cd8" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="be7c7e4b-d068-4987-b2af-d3a90eee6df4">
+      <profileInstance Id="e4074da5-18f9-41fd-b2ae-2a2aa7a135c8" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="b287a46b-8d22-4242-baa1-3e5312f7a94f" name="华招网WEB应用防火墙（WAF）" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2ec6059f-0694-4269-984d-18973df36e0e" />
+        <suppliersInternal>
+          <dependency Id="4a02fed0-ce70-4b88-99e9-818fd4f67f02">
+            <componentMoniker Id="a6f7eca1-9bb7-4e37-baa8-4cf703c9afa7" LastKnownName="CSRF跨站请求防御模块" />
+            <elementDefinition Id="b3412956-1538-4155-b8c2-bc0c36ca8727" />
+          </dependency>
+          <dependency Id="9f23e2d2-e683-47dc-aff7-0b3c43b440c8">
+            <componentMoniker Id="2e2f5af2-d573-406a-a0be-4ec7b77333bf" LastKnownName="HTML注入防御模块" />
+            <elementDefinition Id="202b7661-1e50-44dd-b9ad-5269714088bf" />
+          </dependency>
+          <dependency Id="ab11fe8e-0af2-4e5a-9bbb-126407a8baeb">
+            <componentMoniker Id="695b53bf-27b5-4654-95c0-5d57ffa99c46" LastKnownName="Javascript注入防御" />
+            <elementDefinition Id="5c939de9-6b9d-4b15-96cc-0a31baa1c33e" />
+          </dependency>
+          <dependency Id="f645dc5a-b103-48bc-944b-606e8e8974b2">
+            <componentMoniker Id="d010bbb4-c71e-41eb-a0b7-1076f67d501a" LastKnownName="SQL注入攻击防御" />
+            <elementDefinition Id="844227db-bd88-4aa5-88ca-7c3fddf07bd7" />
+          </dependency>
+          <dependency Id="4b9b3ba8-bf3f-4add-b946-25c0e7ba5f03">
+            <componentMoniker Id="a39aca5b-e4c7-4c8a-a177-c5da64a33797" LastKnownName="XSS防御" />
+            <elementDefinition Id="508f2033-f06c-4817-b9fa-f59cb96a8fcc" />
+          </dependency>
+          <dependency Id="7d78f7a5-7565-432e-8a72-f136cc7830dc">
+            <componentMoniker Id="e791d8e5-846e-457f-bcef-9fa5f8faa951" LastKnownName="日志" />
+            <elementDefinition Id="de9a0e66-ef0b-4bf6-98a9-ac4723d1a527" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="a6f7eca1-9bb7-4e37-baa8-4cf703c9afa7" name="CSRF跨站请求防御模块" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6bf9be49-3b77-406f-9584-93d0279de9ae" />
+        <suppliersInternal>
+          <dependency Id="6e976d8a-6319-4c5b-ac32-71b1e80b81c6">
+            <componentMoniker Id="6893a35e-d15d-462f-8156-c2a180adc632" LastKnownName="token管理器" />
+            <elementDefinition Id="b46ffcf7-192b-41da-a7cd-9c4cc0dcb4f9" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface Id="a92fbcb2-6d23-4d0c-8b93-eaadb97769e2" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="eb562c5a-99c1-439b-aa06-614d3902ad1e" />
+            <type_NamedElement>
+              <interfaceMoniker Id="3f8bbe67-7ee9-4dc4-ae4f-d086ac208f98" LastKnownName="WebContext" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="3f8bbe67-7ee9-4dc4-ae4f-d086ac208f98" name="WebContext" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="2e2f5af2-d573-406a-a0be-4ec7b77333bf" name="HTML注入防御模块" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7b7c26f4-5d96-49b5-810c-b232c13764cb" />
+        <ownedAttributesInternal>
+          <providedInterface Id="8e960e65-fbb4-411a-954e-e64b2d48ca24" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="4388e241-ba96-42a3-9842-9f4f5c1de5af" />
+            <type_NamedElement>
+              <interfaceMoniker Id="ec523108-abc6-40dc-bcfe-b92fc0e04d31" LastKnownName="WebContext" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="ec523108-abc6-40dc-bcfe-b92fc0e04d31" name="WebContext" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="695b53bf-27b5-4654-95c0-5d57ffa99c46" name="Javascript注入防御" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a8055877-897a-4c56-b11b-166e5dd933dd" />
+        <ownedAttributesInternal>
+          <providedInterface Id="d7f9957f-b5a8-45a5-b3e9-f7feb05c3b20" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="896ce825-1180-4b01-ad7c-f2b7158c5237" />
+            <type_NamedElement>
+              <interfaceMoniker Id="db93f606-fdd5-4dd3-8cd4-f95d65641851" LastKnownName="WebContext" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="db93f606-fdd5-4dd3-8cd4-f95d65641851" name="WebContext" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="d010bbb4-c71e-41eb-a0b7-1076f67d501a" name="SQL注入攻击防御" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="619d2a7e-57d9-4758-b139-9dd5cc64cf0c" />
+        <ownedAttributesInternal>
+          <providedInterface Id="3aa07f8d-95c5-4191-9171-2feefaea301a" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="8163037c-2543-4dd1-82fc-9c7dfc86d97f" />
+            <type_NamedElement>
+              <interfaceMoniker Id="d4b20a33-de0f-4f0d-8dc4-8279c3ec4b5a" LastKnownName="WebContext" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="d4b20a33-de0f-4f0d-8dc4-8279c3ec4b5a" name="WebContext" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="a39aca5b-e4c7-4c8a-a177-c5da64a33797" name="XSS防御" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fba0302c-948b-4f6e-b0fa-a2df58f5ce8f" />
+        <ownedAttributesInternal>
+          <providedInterface Id="c56904bb-3507-40fc-8aef-2f83ae360a68" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="9d32bfd2-7310-4a85-bfcb-3025bc019162" />
+            <type_NamedElement>
+              <interfaceMoniker Id="7364882d-627d-463d-aaa9-02602df9a432" LastKnownName="WebContext" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="7364882d-627d-463d-aaa9-02602df9a432" name="WebContext" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="6893a35e-d15d-462f-8156-c2a180adc632" name="token管理器" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="72ed0f0d-9912-430a-a613-b0fb351d3ae4" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="e791d8e5-846e-457f-bcef-9fa5f8faa951" name="日志" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f4428769-6634-44f2-9e9e-c5795203b0b4" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="0fecd376-d736-4786-b352-58eefc5b2cbc" name="HZ.ModelingProject">
+    <elementDefinition Id="bb110f62-ae18-4ca3-ab68-71feaf052d87" />
+  </package>
+</componentModel>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2af0da81-4870-4d48-a404-3f8d40982f45}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>HZ.ModelingProject</Name>
+    <RootNamespace>HZ.ModelingProject</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="305010.项目管理服务业务应用场景.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="305010.项目管理服务业务应用场景.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>305010.项目管理服务业务应用场景.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="305020.项目管理服务静态类图.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="305020.项目管理服务静态类图.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>305020.项目管理服务静态类图.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="401010.日志服务兼容现有系统.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="401010.日志服务兼容现有系统.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>401010.日志服务兼容现有系统.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="402010.即时通讯服务工作模式.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="402010.即时通讯服务工作模式.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>402010.即时通讯服务工作模式.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="4020.即时通讯服务的业务应用模式.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="4020.即时通讯服务的业务应用模式.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>4020.即时通讯服务的业务应用模式.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="402040.即时通讯服务接口.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="402040.即时通讯服务接口.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>402040.即时通讯服务接口.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="404010.网络安全层防御类型.dgml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="开发人员视角.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="开发人员视角.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>开发人员视角.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="4010.日志服务的业务应用模式.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="4010.日志服务的业务应用模式.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>4010.日志服务的业务应用模式.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="缓存服务.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="缓存服务.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>缓存服务.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="网络安全模块设计图.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="网络安全模块设计图.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>网络安全模块设计图.componentdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\HZ.ModelingProject.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="0.系统架构概要.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="0.系统架构概要.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>0.系统架构概要.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="0.系统架构概要.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>0.系统架构概要.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="402030.即时通讯服务构成体系.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="402030.即时通讯服务构成体系.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>402030.即时通讯服务构成体系.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="402030.即时通讯服务构成体系.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>402030.即时通讯服务构成体系.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="网络安全防御模型.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="网络安全防御模型.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>网络安全防御模型.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="网络安全防御模型.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>网络安全防御模型.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+</Project>

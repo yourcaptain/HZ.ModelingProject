@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="a30b1355-7b6c-40ea-9e35-9aedc8687669" name="202030.即时通讯服务" linkedPackageId="316ba7a7-b6c9-4ead-a7ce-5bf786bbfe26" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <ownedCommentsInternal>
+    <comment Id="d858d4fa-4079-4e8b-9e78-3d48f52946df">
+      <elementDefinition Id="f5c84e1a-e280-4ed0-a950-8e4bc5053f83" />
+      <body>restful api</body>
+    </comment>
+    <comment Id="010a65d9-bd60-4c08-a050-05131c6c506f">
+      <elementDefinition Id="26c3760b-b72b-41dd-ac37-e04368891b68" />
+      <body>restful api</body>
+    </comment>
+    <comment Id="705577d3-9e9c-4f69-b1db-6ee8ad6afb1a">
+      <elementDefinition Id="0302e106-45dc-4e12-949a-b9e576c9ebaa" />
+      <body>restful api</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="bce62fb7-2299-4f3f-86ec-833c0f3442f4">
+      <profileInstance Id="ae38172c-e5eb-4a20-894b-fe916133931a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="328a1f38-d585-465c-9021-9da74b69db7e">
+      <profileInstance Id="9e3312d9-e98c-49d4-85a4-26059b7a93f9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="8ae12308-add9-4cf9-83bc-ab70eea39fc4" name="接受服务注册" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="06b94be3-9fa5-434e-ac9e-006eb15bcbfa" />
+        <ownedAttributesInternal>
+          <providedInterface Id="1c5ec2f1-61a7-4fbe-b07e-c288ce55fb3e" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="48724afb-daf0-4f09-869e-4aed9a8786ae" />
+            <type_NamedElement>
+              <interfaceMoniker Id="f62a0732-ee49-4814-a665-ef82214fde4c" LastKnownName="注册服务：服务ID，服务名，可视范围，有效期" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="8e2b8f1d-3cc2-4b5a-9b5a-57825a3fac95" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="da14e97e-41b5-416f-99b9-84dbf34accff" />
+            <type_NamedElement>
+              <interfaceMoniker Id="6d5cf1ad-ccb5-41b5-ae7c-342e1cf06d21" LastKnownName="查询服务列表" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="f62a0732-ee49-4814-a665-ef82214fde4c" name="注册服务：服务ID，服务名，可视范围，有效期" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a3c67080-434d-491e-b2ea-8ba737b3d1ed" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="cc06cac3-875a-48f0-8815-2ac9b7272436" name="接受订阅" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ad1048ef-1881-4b0a-aaa9-5f5e7b80cd01" />
+        <ownedAttributesInternal>
+          <providedInterface Id="d8da5d0a-48b6-4847-acba-909cdaf3f9c6" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <lowerValueInternal>
+              <literalString Id="fbecd9ed-f585-40ca-a2cf-08d533d3a433" name="Lower" value="1">
+                <elementDefinition Id="7bfe98a9-7bae-4fb5-97e6-9abbffe645a8" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="bcfc095a-cf2d-4020-895a-7312476a6ccf" name="Upper" value="1">
+                <elementDefinition Id="1f7d53ea-dd5d-4bec-aa0a-bf7363c0115e" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="a90b2cf1-9511-43ad-92b4-0f4e40722078" />
+            <type_NamedElement>
+              <interfaceMoniker Id="c5863dd7-651e-4005-933e-d09dcb6c8fb6" LastKnownName="订阅服务：服务ID，消息接收方式，消息接收地址" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="c5863dd7-651e-4005-933e-d09dcb6c8fb6" name="订阅服务：服务ID，消息接收方式，消息接收地址" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b94e7a24-9223-401f-ac0e-6dd57384ca23" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="6d5cf1ad-ccb5-41b5-ae7c-342e1cf06d21" name="查询服务列表" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="44197dfb-99d2-414c-9b94-ffe40458c894" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="316ba7a7-b6c9-4ead-a7ce-5bf786bbfe26" name="HZ.ModelingProject">
+    <elementDefinition Id="bb110f62-ae18-4ca3-ab68-71feaf052d87" />
+  </package>
+</componentModel>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="1020.即时通讯服务的应用范围">
+  <useCaseModelRootMoniker Id="755ce223-c06d-47dc-87b5-021541c3b32c" />
+  <nestedChildShapes>
+    <actorShape Id="d36b2251-818f-4fe1-923c-362e8db5c35f" absoluteBounds="0.875, 1, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="c3429edd-71f2-4a42-b543-b66c90fab8c4" LastKnownName="省平台服务器及应用" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="d7e15a43-958a-483f-b4e6-3074f27ec13e" absoluteBounds="0.875, 3.125, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="70d000cb-d834-4afe-b682-d1d564930b2f" LastKnownName="公司内部各服务" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="ecbc1e65-8db4-490b-a9a1-2fd798e78b37" absoluteBounds="3.125, 2.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="a8f9e1e1-557e-48d6-85a0-019bd57dd80a" LastKnownName="写入日志触发即时警告" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseDependencyConnector edgePoints="[(1.375 : 1.3625); (3.25335292687642 : 2.20775881709439)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="e5302dc1-c66a-4732-8807-c3bde83c4deb" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="d36b2251-818f-4fe1-923c-362e8db5c35f" />
+        <useCaseShapeMoniker Id="ecbc1e65-8db4-490b-a9a1-2fd798e78b37" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <useCaseDependencyConnector edgePoints="[(1.375 : 3.275); (3.23456559527849 : 2.53117376188861)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="c12b7751-02f9-4c41-9708-bc4c98764c4a" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="d7e15a43-958a-483f-b4e6-3074f27ec13e" />
+        <useCaseShapeMoniker Id="ecbc1e65-8db4-490b-a9a1-2fd798e78b37" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <useCaseShape Id="61182d34-d0e5-412f-b19f-b48ae06dcd33" absoluteBounds="3.125, 3.25, 1, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="ef8eb2a0-2461-4f19-ad6b-5637c6d9e4a6" LastKnownName="直接注册服务来利用即时通讯" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseDependencyConnector edgePoints="[(1.375 : 3.39375); (3.12856158075654 : 3.52526711855674)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="fcc1f010-6bf6-4c5b-91b0-c499f081bdc0" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="d7e15a43-958a-483f-b4e6-3074f27ec13e" />
+        <useCaseShapeMoniker Id="61182d34-d0e5-412f-b19f-b48ae06dcd33" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <SubsystemShape Id="a479126b-ccf9-4602-a8fe-5061b3fc17a8" absoluteBounds="5.75, 1.625, 1.625, 1.5" customColor="Silver">
+      <subsystemMoniker Id="d3093448-8c82-46da-a359-301855c01b3d" LastKnownName="即时通讯系统" />
+    </SubsystemShape>
+    <useCaseAssociationConnector edgePoints="[(4.125 : 2.375); (5.75 : 2.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="d5bc53fb-2e5e-4b21-bcdb-e0a8247557ec" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="ecbc1e65-8db4-490b-a9a1-2fd798e78b37" />
+        <SubsystemShapeMoniker Id="a479126b-ccf9-4602-a8fe-5061b3fc17a8" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

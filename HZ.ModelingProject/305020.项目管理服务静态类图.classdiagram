@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="7e6e7229-cfb8-4867-82fb-706588391fdd" name="305020.项目管理服务静态类图" linkedPackageId="9a5a50d7-0c75-4b8d-be28-3a14a04ef444" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="935024b3-b98e-42da-b270-4dc886c1f06d">
+      <profileInstance Id="1fa9ab2c-5aed-4d52-b423-d57e61787c0e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="00f6fe2f-aa71-4361-a0ff-139af03fead3">
+      <profileInstance Id="1c22cec4-c8a5-498b-9cc0-ad1c58d3673b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="cabed15a-1a35-4e45-b62e-d2928f14c503" name="标准项目节点" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ee4f6b53-d2cd-45ae-92f8-55c70909c78b" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e9c7e23d-8815-4a91-8b30-f095bd942184" name="标准项目类型" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="47a08c3c-b198-4afc-996b-b21ebba84d98" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="d186b998-badd-4550-a8fa-ab6c46e46980" name="客户项目列表" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bcf9da2b-ad1a-42aa-8444-e116bf72ec9c" />
+        <targetEnds>
+          <association Id="b41d6af8-0dac-415b-9198-651827e2d88c" isDerived="false" sourceEndRoleName="客户项目列表" targetEndRoleName="客户项目节点" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="c97f89dd-f9dd-46f8-b9f3-4e091b02743a" LastKnownName="客户项目节点" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="adc1fa3e-e360-46b9-8f1e-ccaad14d8147" name="客户项目列表" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="29901e8a-caf9-48d5-8859-91d3752d2fb0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e91226cc-0ae4-47ef-9108-2be21a0b6be4" name="客户项目节点" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="d1d50a17-a329-418d-aa9c-8e432e71866e" name="Lower" value="n">
+                      <elementDefinition Id="dca7c8ab-618c-4a16-8646-6870f2e2f8dd" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="5bac6533-3f38-4fae-b99f-273d8a23b033" name="Upper" value="n">
+                      <elementDefinition Id="be8f3f43-f3de-422f-9bb1-c5fa2d08be91" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2124dfa6-5849-4d41-885d-2ed89ae57d23" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7dff57fd-bb70-4aef-8388-bfb7cbe591e7" />
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property Id="a9967263-9506-4471-8467-979bd48d7f8b" name="客户" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="642ea4be-d3b2-4e4b-9465-2cb25536c91a" />
+          </property>
+          <property Id="4a34691b-0dda-4b0e-ad3a-76890db4ccde" name="项目" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="822b221b-65fb-49a5-a71f-7d0d56237ed6" />
+          </property>
+          <property Id="e9042c51-ada0-4cc8-b627-2ad6fc85657a" name="项目类型" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e85efa25-2d67-4a66-a318-459e11e4806f" />
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="c97f89dd-f9dd-46f8-b9f3-4e091b02743a" name="客户项目节点" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6cd9018d-f453-4f43-b015-5cf603c000ff" />
+        <ownedAttributes>
+          <property Id="55054e67-0fa7-4756-b8ca-543a284f9090" name="客户" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a38d53a4-6ded-4533-af18-c7abd4ff03d2" />
+          </property>
+          <property Id="5e617fd7-3cf9-42d3-a172-113297e9731c" name="项目节点" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c5b55aaf-4d49-4059-840a-ab9c4fb168a8" />
+          </property>
+          <property Id="44bf9004-f031-4a1e-8b22-6224ae2bcf36" name="项目节点关系" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2d3712e5-5af9-4f9f-8bd7-145a1e9fb612" />
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="9a5a50d7-0c75-4b8d-be28-3a14a04ef444" name="HZ.ModelingProject">
+    <elementDefinition Id="bb110f62-ae18-4ca3-ab68-71feaf052d87" />
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="cef2da2f-c371-473f-992b-e0e96c0f7ecd" name="缓存服务" linkedPackageId="cf648932-7724-4bd5-81d4-217f7c092542" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="27f7636b-37e7-4c05-b93e-03e09490f257">
+      <profileInstance Id="12f3155e-7a79-4611-888f-ffad61bdfb6d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7c4ae2fb-652f-4a92-844f-0d402554ca52">
+      <profileInstance Id="35c03d76-5f7b-4ceb-a2c4-3cb2247fd430" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="c3446eb0-63b7-45ba-b2c1-102460063a8f" name="缓存服务" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="503ab395-8505-4fd9-97ee-1d314554dc21" />
+        <suppliersInternal>
+          <dependency Id="b74277a6-f36b-4ce4-b140-b075cb475c63">
+            <componentMoniker Id="1cf3f786-5258-4b7f-8588-097364cbd944" LastKnownName="Redis" />
+            <elementDefinition Id="9a862031-54bc-4c04-8a65-3a4426838f7d" />
+          </dependency>
+          <dependency Id="e17f16dc-562e-4383-bd8e-efff0d434672">
+            <componentMoniker Id="22bf6134-f2d7-4b02-a798-c9998c156399" LastKnownName="Memcached" />
+            <elementDefinition Id="aa0154aa-a4b5-4e30-9e89-b7d4737b872e" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface Id="6a25be8f-095f-4c30-830b-c8fe9b8a7b4f" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="050c7975-7aa4-4664-86fc-beec89be3b2a" />
+            <type_NamedElement>
+              <interfaceMoniker Id="a04e113a-13c1-44ec-842f-675f9c870873" LastKnownName="CACHE::GET" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="a824d5b6-01a9-4401-89aa-123f2a30a88d" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="ffb3cda5-01a2-4373-bec8-c03e6e602631" />
+            <type_NamedElement>
+              <interfaceMoniker Id="0816c043-5fc9-4bf4-8f8f-cdaed6281084" LastKnownName="CACHE::SET" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="d49bdc42-f2e1-4022-9748-28c13e04106b" name="Port3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="5ad2a53e-7540-404c-b7df-924dd5d61c6a" />
+            <type_NamedElement>
+              <interfaceMoniker Id="fed820f6-1f25-4f6e-8d34-69cbaced1cd1" LastKnownName="CACHE::SELECT" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="a04e113a-13c1-44ec-842f-675f9c870873" name="CACHE::GET" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="81535468-b109-4a54-8b3d-dc0bff7e1e39" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="0816c043-5fc9-4bf4-8f8f-cdaed6281084" name="CACHE::SET" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c238d5d7-7af0-466d-9916-c323d6834edb" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="fed820f6-1f25-4f6e-8d34-69cbaced1cd1" name="CACHE::SELECT" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="83dc677b-559e-442e-8b39-4da350939a3c" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="1cf3f786-5258-4b7f-8588-097364cbd944" name="Redis" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8cd2f758-df09-4f96-98e2-b78637289084" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="22bf6134-f2d7-4b02-a798-c9998c156399" name="Memcached" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="81924029-3eea-4461-9484-205b224569f0" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="cf648932-7724-4bd5-81d4-217f7c092542" name="HZ.ModelingProject">
+    <elementDefinition Id="bb110f62-ae18-4ca3-ab68-71feaf052d87" />
+  </package>
+</componentModel>

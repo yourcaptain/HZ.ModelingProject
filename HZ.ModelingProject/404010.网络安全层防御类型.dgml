@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="RightToLeft" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="5a4a0913-128a-40f7-9747-4be16c69b4ab1" Bounds="62.5,-12.5,90.8633333333333,25.8366666666667" Label="SQL注入攻击" UseManualLocation="True" />
+    <Node Id="DDos攻击" Bounds="82.5,-94.5,76.8366666666667,25.8366666666667" Label="DDoS攻击" UseManualLocation="True" />
+    <Node Id="防御类型" Bounds="-41.49999999925,-12.9183333333333,68,25.8366666666667" />
+    <Node Id="非法字符过滤" Bounds="58.5,87.5,92,25.8366666666667" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="防御类型" Target="5a4a0913-128a-40f7-9747-4be16c69b4ab1" Bounds="26.5,0.123218643064443,27.0000591021453,0.0978503130948859" />
+    <Link Source="防御类型" Target="DDos攻击" Bounds="12.8348485498512,-63.8373117563191,80.1519582927022,50.9189784229858" />
+    <Link Source="防御类型" Target="非法字符过滤" Bounds="6.90825878408657,12.9183333333333,76.4824924834875,68.573610931884" />
+  </Links>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+</DirectedGraph>

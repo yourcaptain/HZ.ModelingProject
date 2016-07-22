@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="b6c387ed-b79a-4362-b899-923391230561" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="90addece-ce7d-44b0-9896-72a52f7526cd" name="Comment1">
+      <body>WEB服务器模块
+（IIS模块/Apache模块）</body>
+    </comment>
+    <comment Id="a3d768ca-4aea-470f-926f-bb82dd3d95f5" name="Comment2">
+      <body>强制要求开发人员为表单增加token，否则提交表单失败。
+response时直接加上token</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="6a3603f9-9ebe-4993-a318-75e50d4cfda2" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="5ce6737d-5c0d-4fae-8d17-f2194791e9b0" name="Comment3">
+      <body>In</body>
+    </comment>
+    <comment Id="7e23f03c-de58-459d-a5ee-2c2ea07437b6" name="Comment31">
+      <body>Out</body>
+    </comment>
+    <comment Id="8098c3e1-91cc-4978-997c-632c0f7d02ef" name="Comment4">
+      <body>云解析</body>
+    </comment>
+    <comment Id="fa1aafd3-e11a-491d-8585-3f293f9f2f69" name="Comment5">
+      <body>异常登录提醒（IP库）
+
+
+网安认证
+专利、授权</body>
+    </comment>
+  </comments>
+  <layers>
+    <layer Id="efcb0e63-3a1f-4552-a8a4-378aa4663e3c" name="HTML和JS脚本注入监测&#xD;&#xA;（POST/PUT请求内容分析）" />
+    <layer Id="0d68b624-eb1f-4b71-a0bd-e686a106c974" name="XSS跨站攻击监测&#xD;&#xA;（Cookie设置为 HTTP Only）" />
+    <layer Id="2c32096e-3b90-42e0-96f1-04c486c1a378" name="DDos攻击（拟由阿里云DDoS高防IP提供保护）" />
+    <layer Id="6a3603f9-9ebe-4993-a318-75e50d4cfda2" name="CSRF跨站点请求伪造&#xD;&#xA;（强制验证表单Token，Referer check）" />
+    <layer Id="4ca236ef-2cc6-439b-85ff-3127938467c3" name="SQL语句消毒" />
+    <layer Id="4cb4f433-9da7-4f39-a5c9-5d7af5f56b35" name="参数绑定" />
+  </layers>
+</layerModel>

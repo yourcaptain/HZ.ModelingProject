@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="fc3bea77-7ac5-478a-a653-6e97b2348d29" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="f961efd7-dbc6-4be0-b35a-31f7f3c4ccbd" name="4040.网络安全层" />
+    <layer Id="0f8dc0e1-39d4-40a1-bd0c-c10384d65d7d" name="搜索服务" />
+    <layer Id="115e851f-c066-46b3-8efa-a0a30b2a2785" name="缓存服务&#xD;&#xA;&#xD;&#xA;" />
+    <layer Id="f653e348-111f-4244-a1e3-4575d0d21720" name="4010.统一日志服务" />
+    <layer Id="5fb1c807-7eb3-45f3-8fe1-fec577d55dd9" name="4020.即时通信服务" />
+    <layer Id="cccc37de-157b-4a59-be1e-1833c9f4cffb" name="1040.通用认证服务" />
+    <layer Id="71c62921-eca0-4626-9be6-68e335c5d27d" name="API 网关（基于http 1.1协议  JSON协议）" />
+    <layer Id="e842b4c9-9921-4567-8b19-0bb1ee1ecdc9" name="会员服务" />
+    <layer Id="a609fe8a-148d-412f-9f2e-71fd1f39c990" name="投稿服务" />
+    <layer Id="04b3e87a-7227-473a-b8f5-0c0179b24dc8" name="支付服务" />
+    <layer Id="9ec07db8-8a36-4898-9168-8e0b33ae8a47" name="药方服务" />
+    <layer Id="73c27991-829b-4b79-94cb-273a771b07c5" name="CDN服务" />
+    <layer Id="031143e2-e5b8-49da-b3a4-f67ab308c4ba" name="分析服务" />
+    <layer Id="65222fb0-95e1-47ae-a869-bffafc67ca84" name="Message服务" />
+    <layer Id="2c4c1580-0ce2-40a8-924d-c319aa3886a7" name="数据服务&#xD;&#xA;（药品、信息资讯）" />
+    <layer Id="5ef677af-0e02-4547-840c-8db9fe4185b1" name="3050.项目管理服务" />
+    <layer Id="a55f06fe-4357-4dcf-8acb-d92d7599a461" name="API 网关（基于http 1.1协议  JSON协议）1" />
+    <layer Id="d3d73b5b-74fd-47b3-9dd0-4e30e40c4bd3" name="加密解密服务" />
+    <layer Id="2c2ed97d-c75e-45f1-89ea-ff7d7b7da88c" name="认证服务供应商" />
+    <layer Id="3db29fbc-9d3a-4a63-899b-266b7728b8c9" name="CDN服务商" />
+    <layer Id="8121ef60-6d83-4ff7-9a5a-10ac7ddebdba" name="硬件供应商" />
+    <layer Id="831a5be8-727c-4537-83fb-5bdeb0c93430" name="华招医药网" />
+    <layer Id="d1d423e3-d702-484c-9690-5fe202cf1bb2" name="iOS APP" />
+    <layer Id="43a38234-7538-47d2-9a72-62005dda4f1d" name="华招医药浏览器" />
+    <layer Id="2e4121da-f964-47cb-b2d6-d2dc994fcaf7" name="华润三九PMA" />
+    <layer Id="d53492ad-7461-4747-a46f-2da354b37e2c" name="文本分析服务" />
+    <layer Id="0310c87d-b856-4726-9c5e-d8fb5da2df49" name="语音点播" />
+    <layer Id="6e67f4b2-32df-4a29-9aaa-3d6ff3b2fedd" name="视频点播" />
+    <layer Id="86af93a4-9a31-4d3d-8131-db82dcf1675d" name="各服务调用SDK （.Net, JavaScript, Java）" />
+    <layer Id="b5d9a7e3-7a35-427a-acbc-e45c17b17ba5" name="PDF在线阅读" />
+    <layer Id="047d21c4-242c-4a7c-81db-feb1a860fc8a" name="数据加密解密" />
+    <layer Id="01296836-2e3e-4c7e-a9fa-4770163dcabc" name="报表显示" />
+    <layer Id="2f0418da-8f42-4d89-a506-dab0d5ca2080" name="UI标准模板" />
+    <layer Id="247a9621-e80d-4eaf-98d1-2fc0b3bdd985" name="华招招标网" />
+    <layer Id="5696f410-d822-412a-83c9-54e3dd2c43f6" name="华招器械网" />
+    <layer Id="a37f28cc-2d37-4743-9550-a85d085d1f4e" name="辉瑞制药PMA" />
+    <layer Id="ad1a701b-5dab-445c-a27e-b76d652570ce" name="Android APP" />
+    <layer Id="61d367cf-79dd-42b2-af89-b1aae1118aa4" name="AnyChat" />
+    <layer Id="a3ec6414-c4c2-4657-af83-b13b322f0cb6" name="aliyun" />
+    <layer Id="141f5d36-557a-4f11-a6a8-bcdacba28021" name="EMED 4.0" />
+    <layer Id="c49da8ce-3a73-4b18-9785-18a5a2eb8c23" name="华招 PAD" />
+    <layer Id="bc81ea98-2608-4963-a1ff-e1cdca39dd6d" name="CRM" />
+    <layer Id="039c908d-0d5a-4c5a-a580-c8140cc6747c" name="Session服务" />
+    <layer Id="91db0555-f1d5-4b27-94bf-2efe8fe78a2f" name="Office文档在线阅读" />
+    <layer Id="2a5b3b07-1202-4c4b-bcbf-364401d9cb20" name="表单控件" />
+    <layer Id="8c22a358-4ecd-40c4-a9a5-599276269ecf" name="……" />
+    <layer Id="48a33f15-0751-4b3b-aa73-af15173fda42" name="SQL语句安全性分析" />
+    <layer Id="9b2c50ee-f88f-40b3-a970-8bf19073a944" name="数据访问控制" />
+    <layer Id="aa75bf4b-3797-4ec1-ad85-dbb71a19844a" name="HTML/JS注入攻击防范" />
+    <layer Id="65228c34-e3a7-4b5f-a90e-1bb63195ea60" name="DDos防范（路由）" />
+    <layer Id="16fd8119-02e0-430e-ac48-174bde271b50" name="returnURL" />
+    <layer Id="7c687c56-2845-4ddf-b422-f955d52a5421" name="应用层" />
+    <layer Id="c921af84-360d-4ac3-bfac-9661fbbdfb63" name="中间件" />
+    <layer Id="39176c8d-7985-431b-a939-c908c8045f8f" name="业务服务层" />
+    <layer Id="a6798fa0-e5cf-4369-a19a-dc5db59ff146" name="技术服务层" />
+  </layers>
+</layerModel>

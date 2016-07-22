@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="61f10f45-5da6-49b3-b6cd-cf503969a8fd" name="日志服务-用户视角" linkedPackageId="53c37ef2-980e-4469-9199-67371b37d656" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="fafa69f2-eb40-442a-a6ac-e6c6420633d3">
+      <elementDefinition Id="f26526ea-a4d2-4d22-abaf-888fa42ee7b0" />
+      <body>代码、包等签名、版本管理；
+</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="c4f566eb-d755-4f05-a941-eb74a894fbbf" name="开发人员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c6fa4b47-a5d6-41ad-89a5-55d3468d1c7f" />
+        <suppliersInternal>
+          <dependency Id="25b8f288-94f0-40bb-a951-c01f7151cca1">
+            <useCaseMoniker Id="942a3315-7cb3-49a0-834e-e3e11540a081" LastKnownName="查询日志" />
+            <elementDefinition Id="32d9a64b-7192-4761-8702-d22c09edaaea" />
+          </dependency>
+          <dependency Id="5eddd376-2a07-431e-8968-c212cc14769d">
+            <useCaseMoniker Id="44256774-ad9d-49c3-b7f6-c5ee93e179e2" LastKnownName="分析日志" />
+            <elementDefinition Id="1b8c337b-910c-474d-8464-568c69a8a2e8" />
+          </dependency>
+          <dependency Id="263d612e-206e-4d50-89b5-dc2a27446c58">
+            <useCaseMoniker Id="9d8479b9-a6b3-4f52-b4de-e0ac0780a120" LastKnownName="响应系统发起的异常提醒" />
+            <elementDefinition Id="ec77da47-b4cc-49da-ba24-0e54807e5c33" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="d05aebd9-b134-4f5d-8e49-0610cbfca342" name="运维人员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c5b73cc4-b2b2-4d55-a663-7777b1109f42" />
+        <suppliersInternal>
+          <dependency Id="431eb893-d63c-413b-982e-5bb55fc98163" name="Urgency Alarm">
+            <useCaseMoniker Id="9d8479b9-a6b3-4f52-b4de-e0ac0780a120" LastKnownName="响应系统发起的异常提醒" />
+            <elementDefinition Id="5fe4c291-4249-4113-8df0-bc5f9406146a" />
+          </dependency>
+          <dependency Id="bf41cce9-7d9d-411c-bcf2-1b5efb32e50f">
+            <useCaseMoniker Id="44256774-ad9d-49c3-b7f6-c5ee93e179e2" LastKnownName="分析日志" />
+            <elementDefinition Id="8089a8a0-d633-4db2-b0f7-c0dc3b158c6e" />
+          </dependency>
+          <dependency Id="0a64dd17-56c4-4c14-aa45-89d6c5135113">
+            <useCaseMoniker Id="837e36a5-8877-4c1c-a79d-7a0e741d398a" LastKnownName="(远程)管理各系统日志级别" />
+            <elementDefinition Id="ecc80fe3-c0a8-41cc-9f49-a525222b1928" />
+          </dependency>
+          <dependency Id="e4fd9b72-e769-4793-9dbd-ca7188e56b6e" name="Assign Issue">
+            <subsystemMoniker Id="7e21aaf5-eec7-4f08-a772-0304c7777add" LastKnownName="课题管理系统（Issue Management）" />
+            <elementDefinition Id="d948143b-8340-4af4-80ab-fec1aec64ba5" />
+          </dependency>
+          <dependency Id="376a8037-63cf-4023-b179-9f21741bec14">
+            <useCaseMoniker Id="e51feaf5-d08b-49b2-bca8-a98378890f5f" LastKnownName="系统状态报表" />
+            <elementDefinition Id="29e0385f-671d-41d9-9d5d-be9eb915ff62" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="44256774-ad9d-49c3-b7f6-c5ee93e179e2" name="分析日志" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bc89a59a-0a50-454e-8051-c4ec0292a4a6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9d8479b9-a6b3-4f52-b4de-e0ac0780a120" name="响应系统发起的异常提醒" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5e8f711c-9206-4bde-8c57-c726868e7fba" />
+        <suppliersInternal>
+          <dependency Id="ecb7bc2c-cf09-49d6-a40e-e6271e6d4ab9">
+            <subsystemMoniker Id="defac2cb-ffab-4882-8e63-4e75ebdfa67b" LastKnownName="即时通信服务" />
+            <elementDefinition Id="2515c144-63c6-408c-9562-b90afabfc2fd" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="942a3315-7cb3-49a0-834e-e3e11540a081" name="查询日志" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="759b930d-a0f4-4fff-86a4-22aeb5077f74" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="9597c483-2ae0-4df0-a327-60dc134824a0" name="部署人员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fb2f4ece-154e-4e9b-808c-24c2eea9bec8" />
+        <suppliersInternal>
+          <dependency Id="59cb4f66-f5e8-4f7f-b070-30f6264d3a7a">
+            <useCaseMoniker Id="837e36a5-8877-4c1c-a79d-7a0e741d398a" LastKnownName="(远程)管理各系统日志级别" />
+            <elementDefinition Id="303bb85f-81cf-4e46-baf7-62f8687b796a" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="837e36a5-8877-4c1c-a79d-7a0e741d398a" name="(远程)管理各系统日志级别" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="98610c03-6134-4613-a45a-10ced932555b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="7e21aaf5-eec7-4f08-a772-0304c7777add" name="课题管理系统（Issue Management）" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="75cb3788-b0b4-42af-b7ca-112ee07d06b8" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e51feaf5-d08b-49b2-bca8-a98378890f5f" name="系统状态报表" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fd2107c1-40b7-454d-b195-49b8f361c823" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="afde0479-30df-4efa-a9bd-4057e720b7d8" name="管理人员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="30a80eae-3825-44a8-8bfa-8646063c034e" />
+        <suppliersInternal>
+          <dependency Id="4105cb65-a5af-4da8-8f3f-5c9c82ecd92a">
+            <useCaseMoniker Id="e51feaf5-d08b-49b2-bca8-a98378890f5f" LastKnownName="系统状态报表" />
+            <elementDefinition Id="1d4e99f9-b9c7-4645-b2de-1416670a60d9" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="defac2cb-ffab-4882-8e63-4e75ebdfa67b" name="即时通信服务" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7cda62ac-ce3d-4bc3-b3c6-5370b2178de4" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="43fdd563-eaa2-4eb7-bfea-63516b7bc572" name="业务挖掘" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="17a12066-0a4a-4ca5-9b85-f33b63b1c6d9" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="2cd1171b-3ad5-45d2-afaa-1e739cd2f682" name="政府" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="694295cf-36ba-4dde-813d-3e182fcd792b" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0dc0aafc-4023-4734-b400-0809abf51fca" name="企业" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eb5fd3d1-8cde-4546-83bd-f74e8dae27e7" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="71548910-4421-4454-bcde-54d45efca0c2" name="个人" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ac6101e8-10b4-41c5-996e-20f9d09d3410" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="53c37ef2-980e-4469-9199-67371b37d656" name="HZ.ModelingProject">
+    <elementDefinition Id="bb110f62-ae18-4ca3-ab68-71feaf052d87" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f69caf31-6061-48a0-9bf4-b39cef46177c">
+        <profileInstance Id="96a067f9-a950-4ce6-aded-c1e2bbb24a9f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d4890d2d-3b1a-4a46-89bb-179d167c74be">
+        <profileInstance Id="fcf43349-f826-4d2d-871f-77f92e5f0e40" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

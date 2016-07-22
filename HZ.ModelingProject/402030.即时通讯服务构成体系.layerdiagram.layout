@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerDiagram dslVersion="1.0.0.0" Id="e0fba3ec-5037-4c73-b1a0-cca0995c0126" absoluteBounds="0, 0, 11, 8.5" name="1020.即时通讯服务构成">
+  <layerModelMoniker Id="bfe36281-d9e8-4456-bbdb-b41221b912b6" />
+  <nestedChildShapes>
+    <layerShape Id="f9dc545b-d460-4a35-ab35-a4ade79ce513" absoluteBounds="1.375, 1.875, 2, 0.75" customColor="161, 199, 231">
+      <layerMoniker Id="2a53d554-804f-4d26-a9dd-ad88c54253ce" />
+    </layerShape>
+    <layerShape Id="fb257975-d988-48d4-96e2-c09402348243" absoluteBounds="3.875, 1.875, 2, 0.75" customColor="161, 199, 231">
+      <layerMoniker Id="424fb54a-0096-45d7-a851-59005de55dec" />
+    </layerShape>
+    <layerShape Id="f64eed80-fd38-4424-853d-6e11e8a3f37c" absoluteBounds="1.375, 0.875, 4.5, 0.75" customColor="161, 199, 231">
+      <layerMoniker Id="af27f4b2-24ec-4a71-aa58-90c0d898cdc5" />
+    </layerShape>
+    <layerShape Id="862ed8fb-0c59-4dd3-8c74-e0cd5dc9c353" absoluteBounds="1.375, 3, 4.5, 0.75" customColor="161, 199, 231">
+      <layerMoniker Id="4b03a662-8350-4bdd-83c6-cb3dc9ef742b" />
+    </layerShape>
+    <layerShape Id="1a540a88-f484-4c24-b610-016f1454e62f" absoluteBounds="4.375, 6.25, 1.5, 0.75" customColor="Yellow">
+      <layerMoniker Id="695e61f4-b26a-42df-a0e5-7b022018dabb" />
+    </layerShape>
+    <layerShape Id="ca9289ab-61a1-4335-8120-9c074339545a" absoluteBounds="3.125, 6.25, 1.125, 0.75" customColor="161, 199, 231">
+      <layerMoniker Id="e56d9205-3f13-46b5-93fc-b622e584a131" />
+    </layerShape>
+    <layerShape Id="44be5035-bdd4-4fae-8e7a-ff609f8d52ab" absoluteBounds="1.375, 4, 1.375, 0.75" customColor="161, 199, 231">
+      <layerMoniker Id="7e4018ff-bb33-4581-bdbc-9f3feaa51a63" />
+    </layerShape>
+    <layerShape Id="17b5a5e9-1c96-4348-97f1-5e7b221834f2" absoluteBounds="3.125, 4, 2.75, 0.75" customColor="161, 199, 231">
+      <layerMoniker Id="2f6d51af-6951-4bb7-bea7-3b5dcc78330c" />
+    </layerShape>
+    <layerShape Id="f91bce55-a597-417b-9bcf-d28c1ae363bd" absoluteBounds="1.375, 5, 4.5, 0.75" customColor="161, 199, 231">
+      <layerMoniker Id="386a1822-c90d-4397-a474-8716f559459b" />
+    </layerShape>
+    <commentShape Id="4fbb14af-6447-4d30-83e4-21bc7c3d77a5" absoluteBounds="6.375, 1.25, 1.25, 0.375" customColor="255, 255, 204">
+      <commentMoniker Id="dae7cfd0-7901-4877-ab2e-c13eda400795" />
+      <relativeChildShapes />
+    </commentShape>
+    <lineShape Id="746fbd1a-f374-489a-9f76-7aa80908912e" absoluteBounds="0.5, 6, 7.125, 0.03125" outlineColor="83, 134, 191" outlineThickness="0.03125" orientation="Horizontal" />
+    <lineShape Id="cbaa43d4-6916-40d3-9320-1ff6580a2af5" absoluteBounds="4, 2.75, 0, 0.03125" outlineColor="83, 134, 191" outlineThickness="0.03125" orientation="Horizontal" />
+    <lineShape Id="a30f649c-9bb9-4e9a-ae1b-8722429d80cf" absoluteBounds="4, 5.625, 0, 0.03125" outlineColor="83, 134, 191" outlineThickness="0.03125" orientation="Horizontal" />
+    <lineShape Id="b30e5914-ec9e-42fc-a4f0-f81f63860d7f" absoluteBounds="0.75, 2.75, 6.875, 0.03125" outlineColor="83, 134, 191" outlineThickness="0.03125" orientation="Horizontal" />
+  </nestedChildShapes>
+</layerDiagram>

@@ -1,0 +1,2340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="bb110f62-ae18-4ca3-ab68-71feaf052d87"
+  name="HZ.ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="f5c84e1a-e280-4ed0-a950-8e4bc5053f83">
+      <body>restful api</body>
+    </comment>
+    <comment
+      Id="26c3760b-b72b-41dd-ac37-e04368891b68">
+      <body>restful api</body>
+    </comment>
+    <comment
+      Id="0302e106-45dc-4e12-949a-b9e576c9ebaa">
+      <body>restful api</body>
+    </comment>
+    <comment
+      Id="f26526ea-a4d2-4d22-abaf-888fa42ee7b0">
+      <body>代码、包等签名、版本管理；
+</body>
+    </comment>
+    <comment
+      Id="ad9a8c66-ce8c-4759-a35f-7c1b6034a832">
+      <body>in：检查token有效性，Referer check
+out：自动增加token
+
+需要域名白名单
+需要token管理</body>
+      <annotatedElements>
+        <componentMoniker
+          Id="6bf9be49-3b77-406f-9584-93d0279de9ae"
+          LastKnownName="CSRF跨站请求防御模块"
+          LastKnownLocation="HZ.ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="70c5b117-9920-4624-be14-4b2371adc76f">
+      <body>in：HTTP请求体中HTML内容解析替换</body>
+      <annotatedElements>
+        <componentMoniker
+          Id="7b7c26f4-5d96-49b5-810c-b232c13764cb"
+          LastKnownName="HTML注入防御模块"
+          LastKnownLocation="HZ.ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="bcf78416-44e5-4b5d-b3c2-de7f3008536c">
+      <body>in：HTTP请求体中javascript内容解析替换</body>
+      <annotatedElements>
+        <componentMoniker
+          Id="a8055877-897a-4c56-b11b-166e5dd933dd"
+          LastKnownName="Javascript注入防御"
+          LastKnownLocation="HZ.ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="7c36441c-3d03-4b10-a57b-f2504c05d104">
+      <body>in：HTTP请求体中sql内容解析替换</body>
+      <annotatedElements>
+        <componentMoniker
+          Id="619d2a7e-57d9-4758-b139-9dd5cc64cf0c"
+          LastKnownName="SQL注入攻击防御"
+          LastKnownLocation="HZ.ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="cbb22bc6-8b34-4cf4-a9ba-e0b281b6144a">
+      <body>out：自动设置Cookie设置为 HTTP Only</body>
+      <annotatedElements>
+        <componentMoniker
+          Id="fba0302c-948b-4f6e-b0fa-a2df58f5ce8f"
+          LastKnownName="XSS防御"
+          LastKnownLocation="HZ.ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="c8c1f969-2804-4d5f-b6e8-724bdcc65767">
+      <body>IIS Module</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <component
+        Id="db79517e-2277-4971-a35c-806f4ecfc924"
+        name="日志SDK"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="0e69d9fc-8a02-4ed4-adff-d707d9ef9e4d"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="cf2f14e6-7b98-41c5-93d6-290c66662181"
+                LastKnownName="按级别的日志输出"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="d061a64b-e846-403a-98bc-0ed77b72e7e8"
+        name="数据访问SDK"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="3bf1394c-ea75-41a8-88c9-fceb43043129">
+            <componentMoniker
+              Id="db79517e-2277-4971-a35c-806f4ecfc924"
+              LastKnownName="日志SDK"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="b1685778-bee5-40f8-8053-cd1437e2608b"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="03f4490e-e071-4caa-a932-d009c95466bd"
+                LastKnownName="增改查"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="ba026fee-0135-4088-ba85-3715921514a2"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="1344ff79-e77d-487f-842d-e7d141fe7474"
+                LastKnownName="删"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="cf2f14e6-7b98-41c5-93d6-290c66662181"
+        name="按级别的日志输出"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="9cb83dc8-c75b-44fa-b7c2-5e50fc2e0907"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f603a9ab-ea64-4772-91d7-3fbb7e595220"
+        name="Interface2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="03f4490e-e071-4caa-a932-d009c95466bd"
+        name="增改查"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="1344ff79-e77d-487f-842d-e7d141fe7474"
+        name="删"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c6fa4b47-a5d6-41ad-89a5-55d3468d1c7f"
+        name="开发人员"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="32d9a64b-7192-4761-8702-d22c09edaaea">
+            <useCaseMoniker
+              Id="759b930d-a0f4-4fff-86a4-22aeb5077f74"
+              LastKnownName="查询日志"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="1b8c337b-910c-474d-8464-568c69a8a2e8">
+            <useCaseMoniker
+              Id="bc89a59a-0a50-454e-8051-c4ec0292a4a6"
+              LastKnownName="分析日志"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="ec77da47-b4cc-49da-ba24-0e54807e5c33">
+            <useCaseMoniker
+              Id="5e8f711c-9206-4bde-8c57-c726868e7fba"
+              LastKnownName="响应系统发起的异常提醒"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c5b73cc4-b2b2-4d55-a663-7777b1109f42"
+        name="运维人员"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="5fe4c291-4249-4113-8df0-bc5f9406146a"
+            name="Urgency Alarm">
+            <useCaseMoniker
+              Id="5e8f711c-9206-4bde-8c57-c726868e7fba"
+              LastKnownName="响应系统发起的异常提醒"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="8089a8a0-d633-4db2-b0f7-c0dc3b158c6e">
+            <useCaseMoniker
+              Id="bc89a59a-0a50-454e-8051-c4ec0292a4a6"
+              LastKnownName="分析日志"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="ecc80fe3-c0a8-41cc-9f49-a525222b1928">
+            <useCaseMoniker
+              Id="98610c03-6134-4613-a45a-10ced932555b"
+              LastKnownName="(远程)管理各系统日志级别"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="d948143b-8340-4af4-80ab-fec1aec64ba5"
+            name="Assign Issue">
+            <subsystemMoniker
+              Id="75cb3788-b0b4-42af-b7ca-112ee07d06b8"
+              LastKnownName="课题管理系统（Issue Management）"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="29e0385f-671d-41d9-9d5d-be9eb915ff62">
+            <useCaseMoniker
+              Id="fd2107c1-40b7-454d-b195-49b8f361c823"
+              LastKnownName="系统状态报表"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bc89a59a-0a50-454e-8051-c4ec0292a4a6"
+        name="分析日志"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5e8f711c-9206-4bde-8c57-c726868e7fba"
+        name="响应系统发起的异常提醒"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="2515c144-63c6-408c-9562-b90afabfc2fd">
+            <subsystemMoniker
+              Id="7cda62ac-ce3d-4bc3-b3c6-5370b2178de4"
+              LastKnownName="即时通信服务"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="759b930d-a0f4-4fff-86a4-22aeb5077f74"
+        name="查询日志"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="fb2f4ece-154e-4e9b-808c-24c2eea9bec8"
+        name="部署人员"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="303bb85f-81cf-4e46-baf7-62f8687b796a">
+            <useCaseMoniker
+              Id="98610c03-6134-4613-a45a-10ced932555b"
+              LastKnownName="(远程)管理各系统日志级别"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="98610c03-6134-4613-a45a-10ced932555b"
+        name="(远程)管理各系统日志级别"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="75cb3788-b0b4-42af-b7ca-112ee07d06b8"
+        name="课题管理系统（Issue Management）"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fd2107c1-40b7-454d-b195-49b8f361c823"
+        name="系统状态报表"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="30a80eae-3825-44a8-8bfa-8646063c034e"
+        name="管理人员"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="1d4e99f9-b9c7-4645-b2de-1416670a60d9">
+            <useCaseMoniker
+              Id="fd2107c1-40b7-454d-b195-49b8f361c823"
+              LastKnownName="系统状态报表"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="77e2d5fd-b8b4-4990-b739-d62c3021b302"
+        name="1020.即时通讯服务工作模式"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="0f9bebd5-ecd5-4681-9e0e-7277e4a733cd">
+            <body>服务消费者可以是个人, 也可以是计算机系统</body>
+            <annotatedElements>
+              <lifelineMoniker
+                Id="a3dc2d3f-ea0c-4ef3-b5ea-0b7b6f921597"
+                LastKnownName="服务消费者"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="aef601f7-7198-4f7b-ada5-ce780ffdf83f">
+            <body>可进行权限控制</body>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="2c99b7fb-bc61-4cd3-bdc3-a56c29536c20"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="18476ec2-ecf9-40e7-a1fc-07e100c1fc7c"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="4548ee70-c939-472f-a6f8-75c0d41a480a"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="1b571e27-b872-45b7-a7e3-f283db18db2f"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a8a268fb-a22b-47ac-81a0-fc11afc5a386"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="4548ee70-c939-472f-a6f8-75c0d41a480a"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a6687b2b-5cd8-429e-9370-dbe95f28b651"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="HZ.ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0b4cd99b-7587-468c-9cd1-a77471eda5af"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="f668a181-e40a-4f05-8073-f70c12c760ca"
+                LastKnownName="服务提供者"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1b571e27-b872-45b7-a7e3-f283db18db2f"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a8a268fb-a22b-47ac-81a0-fc11afc5a386"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bb41b0ae-9ce6-4dcf-8a63-f5726b45126f"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="f668a181-e40a-4f05-8073-f70c12c760ca"
+                LastKnownName="服务提供者"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="18476ec2-ecf9-40e7-a1fc-07e100c1fc7c"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="832cdd15-6743-4ff1-98e3-0157532fe2e6"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="HZ.ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="40551604-2412-4df7-9750-d13c37002d9a"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="a3dc2d3f-ea0c-4ef3-b5ea-0b7b6f921597"
+                LastKnownName="服务消费者"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="bdb5519a-a4c5-46db-a0b2-99cfcc502fe0"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="c7fd0ead-aeab-416e-b1d0-0714d5e2fd89"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="cf41974f-019c-4984-9f10-4ed093b2f750"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="c7fd0ead-aeab-416e-b1d0-0714d5e2fd89"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="128ef149-2664-4ef2-8129-d0b89528e3b8"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="HZ.ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a3dc2d3f-ea0c-4ef3-b5ea-0b7b6f921597"
+                LastKnownName="服务消费者"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cf41974f-019c-4984-9f10-4ed093b2f750"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="a3dc2d3f-ea0c-4ef3-b5ea-0b7b6f921597"
+                LastKnownName="服务消费者"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c1d1f488-2ff0-4523-9e7f-67d8eece8786"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="bdb5519a-a4c5-46db-a0b2-99cfcc502fe0"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="552dd462-a89b-4801-a238-0527e3468028"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="HZ.ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a3dc2d3f-ea0c-4ef3-b5ea-0b7b6f921597"
+                LastKnownName="服务消费者"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="10fe9f91-0903-48e5-a513-e14c59e01faa"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="685ff93b-f7da-404f-a069-74a15ba9ec7f"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="ac0503a5-52f4-4504-a39b-258a06eafdf2"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="71f2bc75-30e8-404c-84e2-09f3d59a5358"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="76519d94-5032-43b9-ba24-04ef0c67db5a"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="ac0503a5-52f4-4504-a39b-258a06eafdf2"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="19dfdd97-9f27-45fe-9d73-f1269ea10aa9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="HZ.ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="71f2bc75-30e8-404c-84e2-09f3d59a5358"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="fbd35525-9ba5-4e76-8edd-4d3adca65c51"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="a3dc2d3f-ea0c-4ef3-b5ea-0b7b6f921597"
+                LastKnownName="服务消费者"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="76519d94-5032-43b9-ba24-04ef0c67db5a"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b61004d7-25ad-4fc4-a3f5-4fa521d48322"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="a3dc2d3f-ea0c-4ef3-b5ea-0b7b6f921597"
+                LastKnownName="服务消费者"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="685ff93b-f7da-404f-a069-74a15ba9ec7f"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a18549ec-1110-4abb-a6cc-a07318ef8cde"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="HZ.ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="d4c67f87-ca3a-4bd8-94ca-334ec357c8f9"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="a7c05a99-381b-4cd3-9f39-5eab9acf3e83"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="03718281-b1a7-49a3-95f5-c779117bf6f9"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="ac3c747b-e509-41cc-bd90-6aa6c7141da4"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="03718281-b1a7-49a3-95f5-c779117bf6f9"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="469607d3-eb95-4705-adf1-5abc18af8477"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="HZ.ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="42802da5-d02e-4b7b-83d5-7dbd60866e06"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="f668a181-e40a-4f05-8073-f70c12c760ca"
+                LastKnownName="服务提供者"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ac3c747b-e509-41cc-bd90-6aa6c7141da4"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="a7c05a99-381b-4cd3-9f39-5eab9acf3e83"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ccdbde40-26c1-4701-a71b-dad80c86ba32"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="HZ.ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="9f911b93-e926-4d77-ad07-270fc605b48a"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="a3dc2d3f-ea0c-4ef3-b5ea-0b7b6f921597"
+                LastKnownName="服务消费者"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="d7232a9b-ea16-40c4-aefc-a517719774fc"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="773fa2a0-f70f-446c-b86a-956281d64d15"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="db4746c5-4025-4c10-ba69-77ced547ea4f"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="773fa2a0-f70f-446c-b86a-956281d64d15"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6c6d0ee8-c974-4f86-912c-552af80f9587"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="HZ.ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a3dc2d3f-ea0c-4ef3-b5ea-0b7b6f921597"
+                LastKnownName="服务消费者"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="244b399b-927b-4a54-917a-68504950feea"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="d9e16583-bf21-4179-864d-047dd78229e3"
+                LastKnownName="即时通讯服务"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="db4746c5-4025-4c10-ba69-77ced547ea4f"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="a3dc2d3f-ea0c-4ef3-b5ea-0b7b6f921597"
+                LastKnownName="服务消费者"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="d7232a9b-ea16-40c4-aefc-a517719774fc"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="319da94e-647d-4564-9f68-149638393e88"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="HZ.ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a3dc2d3f-ea0c-4ef3-b5ea-0b7b6f921597"
+                LastKnownName="服务消费者"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="f668a181-e40a-4f05-8073-f70c12c760ca"
+            name="服务提供者"
+            isActor="false"
+            lifelineDisplayName="‎服务提供者‎">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0b4cd99b-7587-468c-9cd1-a77471eda5af"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="bb41b0ae-9ce6-4dcf-8a63-f5726b45126f"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="42802da5-d02e-4b7b-83d5-7dbd60866e06"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="d9e16583-bf21-4179-864d-047dd78229e3"
+            name="即时通讯服务"
+            isActor="false"
+            lifelineDisplayName="‎即时通讯服务‎">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="4548ee70-c939-472f-a6f8-75c0d41a480a"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="18476ec2-ecf9-40e7-a1fc-07e100c1fc7c"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c1d1f488-2ff0-4523-9e7f-67d8eece8786"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ac0503a5-52f4-4504-a39b-258a06eafdf2"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="685ff93b-f7da-404f-a069-74a15ba9ec7f"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="03718281-b1a7-49a3-95f5-c779117bf6f9"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a7c05a99-381b-4cd3-9f39-5eab9acf3e83"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="244b399b-927b-4a54-917a-68504950feea"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="a3dc2d3f-ea0c-4ef3-b5ea-0b7b6f921597"
+            name="服务消费者"
+            isActor="false"
+            lifelineDisplayName="‎服务消费者‎">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="c7fd0ead-aeab-416e-b1d0-0714d5e2fd89"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="bdb5519a-a4c5-46db-a0b2-99cfcc502fe0"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="fbd35525-9ba5-4e76-8edd-4d3adca65c51"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b61004d7-25ad-4fc4-a3f5-4fa521d48322"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="773fa2a0-f70f-446c-b86a-956281d64d15"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d7232a9b-ea16-40c4-aefc-a517719774fc"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="6cdcc9c8-d723-4fa2-a913-b360347b02b0"
+            name="注册为服务"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0b4cd99b-7587-468c-9cd1-a77471eda5af"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1b571e27-b872-45b7-a7e3-f283db18db2f"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="8cc28810-f007-44d4-b7b1-9f9f1f95a8a7"
+            name="&lt;&lt;ok&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a8a268fb-a22b-47ac-81a0-fc11afc5a386"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bb41b0ae-9ce6-4dcf-8a63-f5726b45126f"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="7558ad71-cf7e-48bd-8793-967e35908bf8"
+            name="查询可用服务"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c1d1f488-2ff0-4523-9e7f-67d8eece8786"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cf41974f-019c-4984-9f10-4ed093b2f750"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="cd760c44-aa23-45cb-9aa0-fac35ee07870"
+            name="订阅服务"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="fbd35525-9ba5-4e76-8edd-4d3adca65c51"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="71f2bc75-30e8-404c-84e2-09f3d59a5358"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="37adfc2e-0bfb-4db1-bce7-f59109d47d8b"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="76519d94-5032-43b9-ba24-04ef0c67db5a"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b61004d7-25ad-4fc4-a3f5-4fa521d48322"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="928549dc-f5b0-4d6d-bc76-58a96037cbac"
+            name="［异步］供应消息内容"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="42802da5-d02e-4b7b-83d5-7dbd60866e06"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ac3c747b-e509-41cc-bd90-6aa6c7141da4"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="c4b69c97-29ec-4366-a6df-da2345c427bb"
+            name="［异步］广播消息内容"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="244b399b-927b-4a54-917a-68504950feea"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="db4746c5-4025-4c10-ba69-77ced547ea4f"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a6687b2b-5cd8-429e-9370-dbe95f28b651"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="832cdd15-6743-4ff1-98e3-0157532fe2e6"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="128ef149-2664-4ef2-8129-d0b89528e3b8"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="552dd462-a89b-4801-a238-0527e3468028"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="19dfdd97-9f27-45fe-9d73-f1269ea10aa9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a18549ec-1110-4abb-a6cc-a07318ef8cde"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6c6d0ee8-c974-4f86-912c-552af80f9587"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="319da94e-647d-4564-9f68-149638393e88"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="469607d3-eb95-4705-adf1-5abc18af8477"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ccdbde40-26c1-4701-a71b-dad80c86ba32"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="51490e59-4c6d-4edb-9b23-762d60badf34"
+        name="省平台服务器及应用"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="82be903d-3a86-401c-ad62-32e2d0cd2cab"
+            name="http">
+            <useCaseMoniker
+              Id="edd2f2e5-e1d1-4c70-bc6d-e32307165d45"
+              LastKnownName="写入日志触发即时警告"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="ecac6711-5646-4a7c-91c2-7124425444f0"
+        name="公司内部各服务"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="81f628c1-806c-43ea-b16b-b1f2f371776e"
+            name="http">
+            <useCaseMoniker
+              Id="edd2f2e5-e1d1-4c70-bc6d-e32307165d45"
+              LastKnownName="写入日志触发即时警告"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="5dbeb232-7745-45bb-ab75-c919cc317c58">
+            <useCaseMoniker
+              Id="69758057-a4d7-4606-bf77-7071d718f227"
+              LastKnownName="直接注册服务来利用即时通讯"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="edd2f2e5-e1d1-4c70-bc6d-e32307165d45"
+        name="写入日志触发即时警告"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="afb884ce-cbe0-453d-9fab-a2494d400b57"
+            isDerived="false"
+            sourceEndRoleName="写入日志触发即时警告"
+            targetEndRoleName="即时通讯系统"
+            isLeaf="false"
+            name="触发"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="2b2354eb-adc5-4760-8652-e32d5364def8"
+              LastKnownName="即时通讯系统"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="75c912e9-94f8-4c7e-9106-54ad48dab8ef"
+                  name="写入日志触发即时警告"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="96ccd9b6-daa8-4d73-a86a-b3a40ea4f150"
+                  name="即时通讯系统"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="2b2354eb-adc5-4760-8652-e32d5364def8"
+        name="即时通讯系统"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="69758057-a4d7-4606-bf77-7071d718f227"
+        name="直接注册服务来利用即时通讯"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="06b94be3-9fa5-434e-ac9e-006eb15bcbfa"
+        name="接受服务注册"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="48724afb-daf0-4f09-869e-4aed9a8786ae"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="a3c67080-434d-491e-b2ea-8ba737b3d1ed"
+                LastKnownName="注册服务：服务ID，服务名，可视范围，有效期"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="da14e97e-41b5-416f-99b9-84dbf34accff"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="44197dfb-99d2-414c-9b94-ffe40458c894"
+                LastKnownName="查询服务列表"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a3c67080-434d-491e-b2ea-8ba737b3d1ed"
+        name="注册服务：服务ID，服务名，可视范围，有效期"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="ad1048ef-1881-4b0a-aaa9-5f5e7b80cd01"
+        name="接受订阅"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="a90b2cf1-9511-43ad-92b4-0f4e40722078"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <lowerValueInternal>
+              <literalString
+                Id="7bfe98a9-7bae-4fb5-97e6-9abbffe645a8"
+                name="Lower"
+                value="1" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="1f7d53ea-dd5d-4bec-aa0a-bf7363c0115e"
+                name="Upper"
+                value="1" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="b94e7a24-9223-401f-ac0e-6dd57384ca23"
+                LastKnownName="订阅服务：服务ID，消息接收方式，消息接收地址"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b94e7a24-9223-401f-ac0e-6dd57384ca23"
+        name="订阅服务：服务ID，消息接收方式，消息接收地址"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="44197dfb-99d2-414c-9b94-ffe40458c894"
+        name="查询服务列表"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="7cda62ac-ce3d-4bc3-b3c6-5370b2178de4"
+        name="即时通信服务"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="65373212-e791-4f37-aed5-13051889ff11"
+        name="大众个人"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f3ac45fe-dbf8-4393-a7c4-c4fbe35a60a1"
+        name="专家意见领袖"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="d767675e-1ec1-4ff7-adc3-07067ab3de7d"
+        name="日志服务"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="0dd7914e-1989-4155-b6cb-cf84a7a8b3d3"
+        name="EMED 4.0"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="0bf947df-6f60-4733-9102-20bcfabc2df1"
+            name="定期采集(每小时一次)">
+            <componentMoniker
+              Id="f0441e11-14dd-4a7b-a42d-e18229ee80bc"
+              LastKnownName="日志采集器"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="0d528cc4-8f10-4f40-ab6d-86f015bc1daa"
+        name="Android App"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="7af5aff3-5f22-4495-8749-1a9ca729cf4f"
+            name="定期采集(每小时一次)">
+            <componentMoniker
+              Id="f0441e11-14dd-4a7b-a42d-e18229ee80bc"
+              LastKnownName="日志采集器"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="f0441e11-14dd-4a7b-a42d-e18229ee80bc"
+        name="日志采集器"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="9e8823b2-8f04-44a9-a115-05711993995c">
+            <componentMoniker
+              Id="d767675e-1ec1-4ff7-adc3-07067ab3de7d"
+              LastKnownName="日志服务"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="4e2e7927-a8b0-4e12-8aaf-af4eb4327168"
+        name="省平台"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ee4f6b53-d2cd-45ae-92f8-55c70909c78b"
+        name="标准项目节点"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="47a08c3c-b198-4afc-996b-b21ebba84d98"
+        name="标准项目类型"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c151e090-7e77-4fd0-aaa4-af6dca271f5e"
+        name="项目列表"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="bcf9da2b-ad1a-42aa-8444-e116bf72ec9c"
+        name="客户项目列表"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7dff57fd-bb70-4aef-8388-bfb7cbe591e7"
+            isDerived="false"
+            sourceEndRoleName="客户项目列表"
+            targetEndRoleName="客户项目节点"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="6cd9018d-f453-4f43-b015-5cf603c000ff"
+              LastKnownName="客户项目节点"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="29901e8a-caf9-48d5-8859-91d3752d2fb0"
+                  name="客户项目列表"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2124dfa6-5849-4d41-885d-2ed89ae57d23"
+                  name="客户项目节点"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="dca7c8ab-618c-4a16-8646-6870f2e2f8dd"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="be8f3f43-f3de-422f-9bb1-c5fa2d08be91"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property
+            Id="642ea4be-d3b2-4e4b-9465-2cb25536c91a"
+            name="客户"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="822b221b-65fb-49a5-a71f-7d0d56237ed6"
+            name="项目"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e85efa25-2d67-4a66-a318-459e11e4806f"
+            name="项目类型"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="6cd9018d-f453-4f43-b015-5cf603c000ff"
+        name="客户项目节点"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedAttributes>
+          <property
+            Id="a38d53a4-6ded-4533-af18-c7abd4ff03d2"
+            name="客户"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c5b55aaf-4d49-4059-840a-ab9c4fb168a8"
+            name="项目节点"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2d3712e5-5af9-4f9f-8bd7-145a1e9fb612"
+            name="项目节点关系"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f8ed7d84-42e0-4a5f-b1e1-8dcb63af06cb"
+        name="华润三九用户"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e91fdfa1-06ec-44c8-b37d-a5ea6e675ca3"
+            isDerived="false"
+            sourceEndRoleName="华润三九"
+            targetEndRoleName="完成项目"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3209a72e-a64d-48b9-8e3a-b2348fef4d7b"
+              LastKnownName="完成项目"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a65bcccc-2c39-4309-8e00-36bbffef30e6"
+                  name="华润三九"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2f452fd1-3e5d-4a04-a46b-0245137de06b"
+                  name="完成项目"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="44b6ed1f-3780-42c2-913b-caf4144811a1"
+            isDerived="false"
+            sourceEndRoleName="华润三九"
+            targetEndRoleName="取消项目"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="217277af-3699-4e8b-9e1b-65f47c8aab11"
+              LastKnownName="取消项目"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b92ef664-543f-4048-9725-c988f2078251"
+                  name="华润三九"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e9a18d2a-234b-45b4-b576-8dec6761314f"
+                  name="取消项目"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3b35ae97-1763-459f-ae30-260ec9c0cd11"
+            isDerived="false"
+            sourceEndRoleName="华润三九"
+            targetEndRoleName="新建项目"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9ae7ba7b-b39d-4b2a-a10c-ef419f688a0a"
+              LastKnownName="新建项目"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ffd30ee-c31f-4007-ac46-4faf83d34734"
+                  name="华润三九"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c74317cb-632d-423b-943d-2df0a2194ab2"
+                  name="新建项目"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c1438da8-53e3-4bce-8435-c0c844748cee"
+            isDerived="false"
+            sourceEndRoleName="华润三九用户"
+            targetEndRoleName="调整项目的节点顺序"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a62d6d7c-ca7e-4286-9efe-5fd7379c0bc9"
+              LastKnownName="调整项目的节点顺序"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="69b2ba85-4ed1-4df2-b6ef-13fea891d1d0"
+                  name="华润三九用户"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bf0906a8-dded-4b4c-a993-8054fd8188fc"
+                  name="调整项目的节点顺序"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8747044c-c3ab-4a1c-897f-88eae67b1550"
+            isDerived="false"
+            sourceEndRoleName="华润三九用户"
+            targetEndRoleName="维护项目进度"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="12d35cd3-56d2-4bda-89b2-70ea198be970"
+              LastKnownName="维护项目进度"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8320d1f3-bdb2-4e51-960f-07f3346e59bd"
+                  name="华润三九用户"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9bdd5d73-399f-4d5d-ae74-f12969d6d29d"
+                  name="维护项目进度"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9ae7ba7b-b39d-4b2a-a10c-ef419f688a0a"
+        name="新建项目"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a62d6d7c-ca7e-4286-9efe-5fd7379c0bc9"
+        name="调整项目的节点顺序"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="217277af-3699-4e8b-9e1b-65f47c8aab11"
+        name="取消项目"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3209a72e-a64d-48b9-8e3a-b2348fef4d7b"
+        name="完成项目"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="12d35cd3-56d2-4bda-89b2-70ea198be970"
+        name="维护项目进度"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c965132d-81fa-401c-bccd-4313567a3e94"
+        name="华润三九PMA"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c3261b6f-b749-4e4f-be18-0988c3edd295"
+            isDerived="false"
+            sourceEndRoleName="华润三九PMA"
+            targetEndRoleName="生成限价参考信息"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="09331e20-04ea-40a0-95cc-83afc719403b"
+              LastKnownName="生成限价参考信息"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="71091b63-7963-4659-b660-90aa327c4f1f"
+                  name="华润三九PMA"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="40d8d18a-df93-4217-b088-58e74dc7de09"
+                  name="生成限价参考信息"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="09331e20-04ea-40a0-95cc-83afc719403b"
+        name="生成限价参考信息"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="503ab395-8505-4fd9-97ee-1d314554dc21"
+        name="缓存服务"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="9a862031-54bc-4c04-8a65-3a4426838f7d">
+            <componentMoniker
+              Id="8cd2f758-df09-4f96-98e2-b78637289084"
+              LastKnownName="Redis"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="aa0154aa-a4b5-4e30-9e89-b7d4737b872e">
+            <componentMoniker
+              Id="81924029-3eea-4461-9484-205b224569f0"
+              LastKnownName="Memcached"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="050c7975-7aa4-4664-86fc-beec89be3b2a"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="81535468-b109-4a54-8b3d-dc0bff7e1e39"
+                LastKnownName="CACHE::GET"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="ffb3cda5-01a2-4373-bec8-c03e6e602631"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="c238d5d7-7af0-466d-9916-c323d6834edb"
+                LastKnownName="CACHE::SET"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="5ad2a53e-7540-404c-b7df-924dd5d61c6a"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="83dc677b-559e-442e-8b39-4da350939a3c"
+                LastKnownName="CACHE::SELECT"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="81535468-b109-4a54-8b3d-dc0bff7e1e39"
+        name="CACHE::GET"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="c238d5d7-7af0-466d-9916-c323d6834edb"
+        name="CACHE::SET"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="83dc677b-559e-442e-8b39-4da350939a3c"
+        name="CACHE::SELECT"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="8cd2f758-df09-4f96-98e2-b78637289084"
+        name="Redis"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="81924029-3eea-4461-9484-205b224569f0"
+        name="Memcached"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="17a12066-0a4a-4ca5-9b85-f33b63b1c6d9"
+        name="业务挖掘"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="694295cf-36ba-4dde-813d-3e182fcd792b"
+        name="政府"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="eb5fd3d1-8cde-4546-83bd-f74e8dae27e7"
+        name="企业"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="ac6101e8-10b4-41c5-996e-20f9d09d3410"
+        name="个人"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2ec6059f-0694-4269-984d-18973df36e0e"
+        name="华招网WEB应用防火墙（WAF）"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="b3412956-1538-4155-b8c2-bc0c36ca8727">
+            <componentMoniker
+              Id="6bf9be49-3b77-406f-9584-93d0279de9ae"
+              LastKnownName="CSRF跨站请求防御模块"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="202b7661-1e50-44dd-b9ad-5269714088bf">
+            <componentMoniker
+              Id="7b7c26f4-5d96-49b5-810c-b232c13764cb"
+              LastKnownName="HTML注入防御模块"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="5c939de9-6b9d-4b15-96cc-0a31baa1c33e">
+            <componentMoniker
+              Id="a8055877-897a-4c56-b11b-166e5dd933dd"
+              LastKnownName="Javascript注入防御"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="844227db-bd88-4aa5-88ca-7c3fddf07bd7">
+            <componentMoniker
+              Id="619d2a7e-57d9-4758-b139-9dd5cc64cf0c"
+              LastKnownName="SQL注入攻击防御"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="508f2033-f06c-4817-b9fa-f59cb96a8fcc">
+            <componentMoniker
+              Id="fba0302c-948b-4f6e-b0fa-a2df58f5ce8f"
+              LastKnownName="XSS防御"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="de9a0e66-ef0b-4bf6-98a9-ac4723d1a527">
+            <componentMoniker
+              Id="f4428769-6634-44f2-9e9e-c5795203b0b4"
+              LastKnownName="日志"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="6bf9be49-3b77-406f-9584-93d0279de9ae"
+        name="CSRF跨站请求防御模块"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="b46ffcf7-192b-41da-a7cd-9c4cc0dcb4f9">
+            <componentMoniker
+              Id="72ed0f0d-9912-430a-a613-b0fb351d3ae4"
+              LastKnownName="token管理器"
+              LastKnownLocation="HZ.ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="eb562c5a-99c1-439b-aa06-614d3902ad1e"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da"
+                LastKnownName="WebContext"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da"
+        name="WebContext"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="7b7c26f4-5d96-49b5-810c-b232c13764cb"
+        name="HTML注入防御模块"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="4388e241-ba96-42a3-9842-9f4f5c1de5af"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da"
+                LastKnownName="WebContext"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="a8055877-897a-4c56-b11b-166e5dd933dd"
+        name="Javascript注入防御"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="896ce825-1180-4b01-ad7c-f2b7158c5237"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da"
+                LastKnownName="WebContext"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="619d2a7e-57d9-4758-b139-9dd5cc64cf0c"
+        name="SQL注入攻击防御"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="8163037c-2543-4dd1-82fc-9c7dfc86d97f"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da"
+                LastKnownName="WebContext"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="fba0302c-948b-4f6e-b0fa-a2df58f5ce8f"
+        name="XSS防御"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="9d32bfd2-7310-4a85-bfcb-3025bc019162"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="e5f88900-2ac6-40e1-9982-2cd0cf7303da"
+                LastKnownName="WebContext"
+                LastKnownLocation="HZ.ModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="72ed0f0d-9912-430a-a613-b0fb351d3ae4"
+        name="token管理器"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="f4428769-6634-44f2-9e9e-c5795203b0b4"
+        name="日志"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

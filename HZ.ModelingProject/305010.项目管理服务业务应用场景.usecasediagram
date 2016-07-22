@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="f55ea316-bf54-41ca-a9e1-49602ffb5bf8" name="305010.项目管理服务业务应用场景" linkedPackageId="fcf8022f-1901-4979-a88d-0eee321b87c8" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="e8b78fdd-7eda-45ad-a782-a8a9b717118a">
+      <profileInstance Id="41e8303f-8df2-4c31-885f-9e8cdf1e564b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d6cdb88c-a6ef-4fa2-926b-52479d12777c">
+      <profileInstance Id="c6a9b1a2-3380-48e9-8dd1-d39a100327ad" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="f2065f34-289b-47d3-b9fc-b097f3996862" name="华润三九用户" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8ed7d84-42e0-4a5f-b1e1-8dcb63af06cb" />
+        <targetEnds>
+          <association Id="80d1f8f3-079d-4a3c-8ee2-0075d2b8bb72" isDerived="false" sourceEndRoleName="华润三九" targetEndRoleName="完成项目" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c5251391-975c-4823-b025-69bfaf4feaaf" LastKnownName="完成项目" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="df8e982d-affd-4023-98fb-9a532e660b36" name="华润三九" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a65bcccc-2c39-4309-8e00-36bbffef30e6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1ee4fc1e-e438-4589-8c28-e077469b09ba" name="完成项目" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2f452fd1-3e5d-4a04-a46b-0245137de06b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e91fdfa1-06ec-44c8-b37d-a5ea6e675ca3" />
+          </association>
+          <association Id="a252b4f1-82eb-4e66-9891-5c5273fc1fb6" isDerived="false" sourceEndRoleName="华润三九" targetEndRoleName="取消项目" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f83f123c-769f-43f2-bc15-647e9e44d92e" LastKnownName="取消项目" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2e4053f9-b3fe-449a-89d4-443d3d64cff0" name="华润三九" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b92ef664-543f-4048-9725-c988f2078251" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ecf8f92a-0d77-4c0c-9804-5c079abbb812" name="取消项目" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e9a18d2a-234b-45b4-b576-8dec6761314f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="44b6ed1f-3780-42c2-913b-caf4144811a1" />
+          </association>
+          <association Id="d712c9de-d9cc-4d07-9070-c5329b0b1fab" isDerived="false" sourceEndRoleName="华润三九" targetEndRoleName="新建项目" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="00301dd1-4b55-4d7f-a1fb-8286befec71e" LastKnownName="新建项目" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ea4eb81-1feb-4693-9d55-b0751c3bc189" name="华润三九" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2ffd30ee-c31f-4007-ac46-4faf83d34734" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c6e0ca75-f61e-4d58-86f5-d16628b5028b" name="新建项目" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c74317cb-632d-423b-943d-2df0a2194ab2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3b35ae97-1763-459f-ae30-260ec9c0cd11" />
+          </association>
+          <association Id="44cf706e-d23c-48ce-90d9-2e037b20ee54" isDerived="false" sourceEndRoleName="华润三九用户" targetEndRoleName="调整项目的节点顺序" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="efd2eb4d-60ab-460c-a357-82eb05c4841a" LastKnownName="调整项目的节点顺序" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="31fa1b6f-5de1-41b7-aea8-e7c98ffbdeaa" name="华润三九用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="69b2ba85-4ed1-4df2-b6ef-13fea891d1d0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0ae2cb12-ac95-4c48-b00f-454458827580" name="调整项目的节点顺序" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bf0906a8-dded-4b4c-a993-8054fd8188fc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c1438da8-53e3-4bce-8435-c0c844748cee" />
+          </association>
+          <association Id="279acbbd-3387-4ef5-920e-769c58393dd9" isDerived="false" sourceEndRoleName="华润三九用户" targetEndRoleName="维护项目进度" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0884bca5-dcbe-4653-b185-e769d14c5f53" LastKnownName="维护项目进度" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="53c9df01-7825-4971-b6ae-cd32daaa83fd" name="华润三九用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8320d1f3-bdb2-4e51-960f-07f3346e59bd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c0e16365-43ef-4e7b-b71f-4fe968d0745e" name="维护项目进度" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9bdd5d73-399f-4d5d-ae74-f12969d6d29d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8747044c-c3ab-4a1c-897f-88eae67b1550" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="00301dd1-4b55-4d7f-a1fb-8286befec71e" name="新建项目" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9ae7ba7b-b39d-4b2a-a10c-ef419f688a0a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="efd2eb4d-60ab-460c-a357-82eb05c4841a" name="调整项目的节点顺序" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a62d6d7c-ca7e-4286-9efe-5fd7379c0bc9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f83f123c-769f-43f2-bc15-647e9e44d92e" name="取消项目" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="217277af-3699-4e8b-9e1b-65f47c8aab11" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c5251391-975c-4823-b025-69bfaf4feaaf" name="完成项目" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3209a72e-a64d-48b9-8e3a-b2348fef4d7b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0884bca5-dcbe-4653-b185-e769d14c5f53" name="维护项目进度" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="12d35cd3-56d2-4bda-89b2-70ea198be970" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="41dd90ec-de29-4c14-9d8a-de91c7c10042" name="华润三九PMA" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c965132d-81fa-401c-bccd-4313567a3e94" />
+        <targetEnds>
+          <association Id="ac0df5b9-3cfb-4ec3-92dc-ebe593168f8f" isDerived="false" sourceEndRoleName="华润三九PMA" targetEndRoleName="生成限价参考信息" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="73debf7b-6668-48aa-972e-8fc1ac7008bb" LastKnownName="生成限价参考信息" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8789319f-9446-433a-9264-e44270cdb18a" name="华润三九PMA" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="71091b63-7963-4659-b660-90aa327c4f1f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fb69face-5862-45bf-a39d-fe33bc14a385" name="生成限价参考信息" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="40d8d18a-df93-4217-b088-58e74dc7de09" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c3261b6f-b749-4e4f-be18-0988c3edd295" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="73debf7b-6668-48aa-972e-8fc1ac7008bb" name="生成限价参考信息" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="09331e20-04ea-40a0-95cc-83afc719403b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="fcf8022f-1901-4979-a88d-0eee321b87c8" name="HZ.ModelingProject">
+    <elementDefinition Id="bb110f62-ae18-4ca3-ab68-71feaf052d87" />
+  </package>
+</useCaseModelRoot>

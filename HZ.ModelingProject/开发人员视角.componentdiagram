@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="556d9a52-d1c9-4ef7-973d-2692d800b800" name="开发人员视角" linkedPackageId="da1d5cb5-ba36-409e-b6a2-4bd2a7328576" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="95f11d80-d22e-4b77-8de4-ae6486d1a040">
+      <profileInstance Id="b433607d-b23f-4025-9368-b2bc16c671e1" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0e9eb9d2-55fa-4786-9082-3ba4d61c8029">
+      <profileInstance Id="2cd6450e-ee46-4cff-8b5f-0956341ef33a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="99a51453-b272-48dd-b527-dfc0cde17a54" name="日志SDK" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="db79517e-2277-4971-a35c-806f4ecfc924" />
+        <ownedAttributesInternal>
+          <providedInterface Id="90b86a29-729f-4c54-80ad-4b0ededcb3b1" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="0e69d9fc-8a02-4ed4-adff-d707d9ef9e4d" />
+            <type_NamedElement>
+              <interfaceMoniker Id="6c2b4fdf-9b40-4e5b-aadc-0abc38360357" LastKnownName="按级别的日志输出" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="7788f2fe-b48c-48a8-9be6-2e0c4eb32469" name="数据访问SDK" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d061a64b-e846-403a-98bc-0ed77b72e7e8" />
+        <suppliersInternal>
+          <dependency Id="022f3a08-66dd-4704-a6d5-3c8ec6cee867">
+            <componentMoniker Id="99a51453-b272-48dd-b527-dfc0cde17a54" LastKnownName="日志SDK" />
+            <elementDefinition Id="3bf1394c-ea75-41a8-88c9-fceb43043129" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface Id="85cd0114-9c2e-4156-8fc7-de7fe13c44ae" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="b1685778-bee5-40f8-8053-cd1437e2608b" />
+            <type_NamedElement>
+              <interfaceMoniker Id="625e7629-5f3d-401d-a731-0309a1d8d4ba" LastKnownName="增改查" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="c3dcaf93-5137-4c81-ae42-548a4b6a80d7" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="ba026fee-0135-4088-ba85-3715921514a2" />
+            <type_NamedElement>
+              <interfaceMoniker Id="32afcae5-c63f-490f-bf9c-2549aced8d85" LastKnownName="删" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="6c2b4fdf-9b40-4e5b-aadc-0abc38360357" name="按级别的日志输出" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cf2f14e6-7b98-41c5-93d6-290c66662181" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="625e7629-5f3d-401d-a731-0309a1d8d4ba" name="增改查" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="03f4490e-e071-4caa-a932-d009c95466bd" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="32afcae5-c63f-490f-bf9c-2549aced8d85" name="删" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1344ff79-e77d-487f-842d-e7d141fe7474" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="da1d5cb5-ba36-409e-b6a2-4bd2a7328576" name="HZ.ModelingProject">
+    <elementDefinition Id="bb110f62-ae18-4ca3-ab68-71feaf052d87" />
+  </package>
+</componentModel>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="67562e23-da17-4d58-b525-ecbe8b085707" name="101010.日志服务兼容现有系统" linkedPackageId="ede3cd3d-030e-4f01-be60-5a2a9c48fa2a" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="886f5c03-d0f9-4c04-b943-dccd4614ed14">
+      <profileInstance Id="3007cd55-9053-4056-a39c-fd3e5692b1af" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1624444a-d81d-41eb-804e-1ce5a18b4b47">
+      <profileInstance Id="ca7e79b6-b499-43a0-b4b9-0d5e1120a44b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="2ed0399a-d67b-40a9-8ce9-a3275a9893e8" name="日志服务" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d767675e-1ec1-4ff7-adc3-07067ab3de7d" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="e4c21cd6-6863-4c09-840d-b21331b07a9b" name="EMED 4.0" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0dd7914e-1989-4155-b6cb-cf84a7a8b3d3" />
+        <suppliersInternal>
+          <dependency Id="34502790-9673-41f4-b535-5e4f11cb11c3" name="定期采集(每小时一次)">
+            <componentMoniker Id="261626ae-7c3a-4ece-a4ef-44ccc45468ac" LastKnownName="日志采集器" />
+            <elementDefinition Id="0bf947df-6f60-4733-9102-20bcfabc2df1" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="3072a8f9-f5c8-4bca-aaf8-59fc0e0db330" name="Android App" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0d528cc4-8f10-4f40-ab6d-86f015bc1daa" />
+        <suppliersInternal>
+          <dependency Id="d1546c40-497a-499b-b205-3d25dc50bbce" name="定期采集(每小时一次)">
+            <componentMoniker Id="261626ae-7c3a-4ece-a4ef-44ccc45468ac" LastKnownName="日志采集器" />
+            <elementDefinition Id="7af5aff3-5f22-4495-8749-1a9ca729cf4f" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="261626ae-7c3a-4ece-a4ef-44ccc45468ac" name="日志采集器" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f0441e11-14dd-4a7b-a42d-e18229ee80bc" />
+        <suppliersInternal>
+          <dependency Id="7568a7c3-7af2-43f4-a9df-7c8e55399387">
+            <componentMoniker Id="2ed0399a-d67b-40a9-8ce9-a3275a9893e8" LastKnownName="日志服务" />
+            <elementDefinition Id="9e8823b2-8f04-44a9-a115-05711993995c" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="416bb92d-17a5-4086-b3e8-9286c1c7b474" name="省平台" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4e2e7927-a8b0-4e12-8aaf-af4eb4327168" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="ede3cd3d-030e-4f01-be60-5a2a9c48fa2a" name="HZ.ModelingProject">
+    <elementDefinition Id="bb110f62-ae18-4ca3-ab68-71feaf052d87" />
+  </package>
+</componentModel>

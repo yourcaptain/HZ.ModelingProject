@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="755ce223-c06d-47dc-87b5-021541c3b32c" name="1020.即时通讯服务的应用范围" linkedPackageId="859c2c07-69d8-4301-a269-27bba13bebf5" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="3f25609b-8088-4673-a492-b36287a6f63c">
+      <profileInstance Id="5e168dd0-afb0-4b0b-8fab-e7557a4a956b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9303940e-2b89-42cd-8120-9c5edb0f5cb6">
+      <profileInstance Id="6c4d85e1-baaa-44de-b77e-bc93e18294c9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="c3429edd-71f2-4a42-b543-b66c90fab8c4" name="省平台服务器及应用" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="51490e59-4c6d-4edb-9b23-762d60badf34" />
+        <suppliersInternal>
+          <dependency Id="e5302dc1-c66a-4732-8807-c3bde83c4deb" name="http">
+            <useCaseMoniker Id="a8f9e1e1-557e-48d6-85a0-019bd57dd80a" LastKnownName="写入日志触发即时警告" />
+            <elementDefinition Id="82be903d-3a86-401c-ad62-32e2d0cd2cab" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="70d000cb-d834-4afe-b682-d1d564930b2f" name="公司内部各服务" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ecac6711-5646-4a7c-91c2-7124425444f0" />
+        <suppliersInternal>
+          <dependency Id="c12b7751-02f9-4c41-9708-bc4c98764c4a" name="http">
+            <useCaseMoniker Id="a8f9e1e1-557e-48d6-85a0-019bd57dd80a" LastKnownName="写入日志触发即时警告" />
+            <elementDefinition Id="81f628c1-806c-43ea-b16b-b1f2f371776e" />
+          </dependency>
+          <dependency Id="fcc1f010-6bf6-4c5b-91b0-c499f081bdc0">
+            <useCaseMoniker Id="ef8eb2a0-2461-4f19-ad6b-5637c6d9e4a6" LastKnownName="直接注册服务来利用即时通讯" />
+            <elementDefinition Id="5dbeb232-7745-45bb-ab75-c919cc317c58" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a8f9e1e1-557e-48d6-85a0-019bd57dd80a" name="写入日志触发即时警告" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="edd2f2e5-e1d1-4c70-bc6d-e32307165d45" />
+        <targetEnds>
+          <association Id="d5bc53fb-2e5e-4b21-bcdb-e0a8247557ec" isDerived="false" sourceEndRoleName="写入日志触发即时警告" targetEndRoleName="即时通讯系统" isLeaf="false" name="触发" isAbstract="false">
+            <subsystemMoniker Id="d3093448-8c82-46da-a359-301855c01b3d" LastKnownName="即时通讯系统" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="69e7278a-0214-44d7-99db-a5864e735930" name="写入日志触发即时警告" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="75c912e9-94f8-4c7e-9106-54ad48dab8ef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3ab31520-f2ad-4902-96fc-bc58841c4a69" name="即时通讯系统" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="96ccd9b6-daa8-4d73-a86a-b3a40ea4f150" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="afb884ce-cbe0-453d-9fab-a2494d400b57" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="d3093448-8c82-46da-a359-301855c01b3d" name="即时通讯系统" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2b2354eb-adc5-4760-8652-e32d5364def8" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ef8eb2a0-2461-4f19-ad6b-5637c6d9e4a6" name="直接注册服务来利用即时通讯" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="69758057-a4d7-4606-bf77-7071d718f227" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="859c2c07-69d8-4301-a269-27bba13bebf5" name="HZ.ModelingProject">
+    <elementDefinition Id="bb110f62-ae18-4ca3-ab68-71feaf052d87" />
+  </package>
+</useCaseModelRoot>

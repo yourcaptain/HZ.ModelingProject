@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="202030.即时通讯服务">
+  <componentModelMoniker Id="a30b1355-7b6c-40ea-9e35-9aedc8687669" />
+  <nestedChildShapes>
+    <componentShape Id="b4db9b55-6a4a-40a4-9901-176bc3b5348e" absoluteBounds="2.75, 1.75, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="8ae12308-add9-4cf9-83bc-ab70eea39fc4" LastKnownName="接受服务注册" />
+      <relativeChildShapes>
+        <providedInterfaceShape Id="aeea6941-962f-4609-951c-be76e6b59448" absoluteBounds="3.59375, 1.34375, 0.15625, 0.40625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <providedInterfaceMoniker Id="1c5ec2f1-61a7-4fbe-b07e-c288ce55fb3e" LastKnownName="Port1" />
+          <relativeChildShapes />
+        </providedInterfaceShape>
+        <providedInterfaceShape Id="9b3a1502-9e77-49d7-9049-c47bc8b4691f" absoluteBounds="4.25, 2.28125, 0.40625, 0.15625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <providedInterfaceMoniker Id="8e2b8f1d-3cc2-4b5a-9b5a-57825a3fac95" LastKnownName="Port2" />
+          <relativeChildShapes />
+        </providedInterfaceShape>
+      </relativeChildShapes>
+    </componentShape>
+    <componentShape Id="0f7893a9-c1a2-4ac0-b8ba-b0b7f37cd3f4" absoluteBounds="2.75, 4, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="cc06cac3-875a-48f0-8815-2ac9b7272436" LastKnownName="接受订阅" />
+      <relativeChildShapes>
+        <providedInterfaceShape Id="9327fd95-0ccc-4f46-acb8-4946a29ba8d2" absoluteBounds="3.625, 3.59375, 0.15625, 0.40625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <providedInterfaceMoniker Id="d8da5d0a-48b6-4847-acba-909cdaf3f9c6" LastKnownName="Port1" />
+          <relativeChildShapes />
+        </providedInterfaceShape>
+      </relativeChildShapes>
+    </componentShape>
+    <commentShape Id="d72656fc-3fcd-49d5-ad55-224074615eb0" absoluteBounds="0.75, 3.875, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="d858d4fa-4079-4e8b-9e78-3d48f52946df" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="aa40f4d2-017d-4e7d-b1f9-39b63d6ce7bf" absoluteBounds="1, 1.375, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="010a65d9-bd60-4c08-a050-05131c6c506f" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="a7385ba7-f061-4470-a290-2da96ef2a61e" absoluteBounds="4.75, 2.75, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="705577d3-9e9c-4f69-b1db-6ee8ad6afb1a" />
+      <relativeChildShapes />
+    </commentShape>
+  </nestedChildShapes>
+</componentDiagram>

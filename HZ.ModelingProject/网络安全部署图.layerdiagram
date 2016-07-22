@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4360073c-89b0-47d8-b35b-33704db7b5ac" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="6170b166-82f0-4340-a394-604443fd29fa" name="Comment1">
+      <body>第一种部署方式</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="47acde7f-e3f5-442c-af91-89b203c4cd35" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="905d5ef6-b06a-45df-bca9-c4d38ab2313e" name="Comment11">
+      <body>第二种部署方式</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="d517a8f2-be53-42b3-b502-88a157cc3ad0" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+  </comments>
+  <layers>
+    <layer Id="47acde7f-e3f5-442c-af91-89b203c4cd35" name="负载均衡服务器（集群）">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="7c104a1e-a5c7-4329-af9c-f3c0521721e7" direction="Forward">
+          <layerMoniker Id="d7d0db59-daa2-48c3-9d17-2a5ed35be2d2" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="5bbab335-9751-42cb-8eb4-372f829d1161" direction="Forward">
+          <layerMoniker Id="fbb17038-c12f-46a7-b3fd-c8058a2363fb" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="d7d0db59-daa2-48c3-9d17-2a5ed35be2d2" name="应用服务器">
+      <childLayers>
+        <layer Id="7bbf0dad-a6d3-4eba-8088-95f466af4fd6" name="hz WAF I型" />
+      </childLayers>
+    </layer>
+    <layer Id="fbb17038-c12f-46a7-b3fd-c8058a2363fb" name="应用服务器1">
+      <childLayers>
+        <layer Id="75626b13-d111-4bed-8bba-0d76d7e68771" name="hz WAF I型" />
+      </childLayers>
+    </layer>
+    <layer Id="f512c688-fe2d-43fa-877e-69633b15b312" name="应用服务器2" />
+    <layer Id="f8d8deab-a32c-48d1-9cd1-cc25723bebca" name="应用服务器11" />
+    <layer Id="d517a8f2-be53-42b3-b502-88a157cc3ad0" name="hz WAF II型 (兼负载均衡)">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="8f4f03af-3ad0-4a5c-819e-25615d05fc73" direction="Forward">
+          <layerMoniker Id="f512c688-fe2d-43fa-877e-69633b15b312" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="eb9bc210-1e35-4c6a-80a2-26b5fc25d964" direction="Forward">
+          <layerMoniker Id="f8d8deab-a32c-48d1-9cd1-cc25723bebca" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+  </layers>
+</layerModel>

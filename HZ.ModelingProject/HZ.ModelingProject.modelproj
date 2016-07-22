@@ -130,6 +130,17 @@
       <SubType>Content</SubType>
       <DependentUpon>402030.即时通讯服务构成体系.layerdiagram</DependentUpon>
     </Validate>
+    <Validate Include="网络安全部署图.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="网络安全部署图.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>网络安全部署图.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="网络安全部署图.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>网络安全部署图.layerdiagram</DependentUpon>
+    </Validate>
     <Validate Include="网络安全防御模型.layerdiagram">
       <SubType>Content</SubType>
     </Validate>
